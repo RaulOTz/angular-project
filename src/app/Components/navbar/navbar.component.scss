@@ -1,0 +1,30 @@
+.navbar-toggler::selection{
+    background-color: gray;
+}
+
+.navbar {
+    background-color: #000000;
+    color: white;
+}
+
+img{
+    width: 55px;
+    height: 30px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgba(255, 255, 0, 0.82);
+}
+
+
+
+
+.navbar-toggler{
+    color: rgba(255, 255, 255, 0.674);
+    background-color: rgba(255, 255, 0, 0.82);
+}
+
