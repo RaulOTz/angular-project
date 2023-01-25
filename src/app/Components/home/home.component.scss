@@ -3,14 +3,14 @@
     background-color: rgb(0, 0, 0);
     
     p{
-       padding-bottom: 1rem; 
+       padding-bottom: .1rem; 
        font-size: 2rem;
-       color: white;
+       color: rgba(255, 255, 0, 0.383);
     }
 
     .underBtn{
         border-top: 1px solid rgba(255, 255, 0, 0.241);
-        padding-top: 5rem;
+        padding-top: 2rem;
         padding-bottom: 40rem;
         background-color: rgba(128, 128, 128, 0.093);
     }
@@ -18,10 +18,7 @@
         -webkit-transition: .3s all ease;
         -o-transition: .3s all ease;
         transition: .3s all ease; 
-        border-top-left-radius: 25%;
-        border-top-right-radius: 25%;
-        
-        
+       
         box-shadow: 0 0 20px 8px rgba(255, 255, 0, 0.1);
     }
 
@@ -35,6 +32,7 @@
         background-color: rgba(128, 128, 128, 0.093);
         -webkit-box-shadow: -10px -10px 0 0 rgba(255, 255, 0, 0.159);
         box-shadow: -10px -10px 0 0 rgba(255, 255, 0, 0.141);
+       
     }
 
     button{
@@ -54,13 +52,13 @@
         border: black;
         color: black;
         box-shadow: 6px 6px 0 0 rgba(255, 255, 0, 0.253);
-
+        transition: .4s all ease; 
     }
 }
 
 .imagesAboutUs{
     background-color: black;
-    padding-bottom: 15rem;
+    padding-bottom: 5rem;
     
     
     ul{
