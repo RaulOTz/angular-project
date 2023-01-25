@@ -1,13 +1,15 @@
 .introduction{
     text-align: center;
-    
+    background-color: black;
 
     p{
         padding: 1rem;
+        color: rgba(255, 255, 0, 0.383);
     }
     
     h1{
-       padding: 2rem;
+        padding-top: 7rem;
+        color: rgba(255, 255, 0, 0.383);
     }
 }
 
@@ -15,26 +17,26 @@
 
 
 .containerInf{
-    background-color: rgba(0, 0, 0, 0.818);
+    background-color: black;
     padding-bottom: 20rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 1.5rem;
-    margin-top: 2rem;
+    padding-top: 4rem;
+    margin-top: -1rem;
 
     
     .title{
         text-align: center;
-        border: 4px solid rgba(0, 0, 0, 0.504);
+        border: 4px solid rgba(128, 128, 128, 0.307);
     }
     
     ngb-carousel{
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.504);
+        background-color: rgba(128, 128, 128, 0.307);
     }
 
     .btnW{
-        background-color: rgba(0, 0, 0, 0.504);
+        background-color: rgba(128, 128, 128, 0.634);
         text-align: center;
     
         
@@ -61,7 +63,7 @@
 
     
     .btnW:hover{
-        background-color: rgba(0, 0, 0, 0.224) ;
+        background-color: rgba(128, 128, 128, 0.135) ;
         border-top: 2px solid yellowgreen;
     }
  
