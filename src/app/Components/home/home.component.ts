@@ -22,8 +22,10 @@ export class HomeComponent implements OnInit {
     return (this.element = false);
   }
   
-  url = "./assets/logo.png"
+  url = "./assets/Home/M1.jpg"
 
-  url2="./assets/logo - copia.png"
+  url2="./assets/Home/M2.jpg"
+
+  url3= "./assets/Home/M3.jpg"
 
 }
