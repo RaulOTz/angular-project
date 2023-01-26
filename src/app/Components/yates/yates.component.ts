@@ -12,4 +12,11 @@ export class YatesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  url = "./assets/Home/M1.jpg"
+
+  url2="./assets/Home/M2.jpg"
+
+  url3= "./assets/Home/M3.jpg"
+
+
 }

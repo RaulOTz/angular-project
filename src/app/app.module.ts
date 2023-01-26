@@ -12,6 +12,9 @@ import { HomeComponent } from './Components/home/home.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
