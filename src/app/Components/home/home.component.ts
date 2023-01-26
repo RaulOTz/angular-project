@@ -22,8 +22,11 @@ export class HomeComponent implements OnInit {
   hideData() {
     return (this.element = false);
   }
+
+
+ 
   
-  url = "./assets/Home/M1.jpg"
+  url = "./assets/Home/gif.gif"
 
   url2="./assets/Home/M2.jpg"
 

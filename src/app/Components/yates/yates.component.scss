@@ -1,0 +1,88 @@
+.AboutUs{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 20rem;
+    color: rgba(255, 255, 0, 0.383);
+    p{
+        
+       font-size: 2rem;
+       color: rgba(255, 255, 0, 0.383);
+    }
+
+    .underBtn{
+        
+        padding-top: .5rem;
+        padding-bottom: 40rem;
+        background-color: rgba(128, 128, 128, 0.307);
+    }
+ 
+
+    .contentAboutUs{
+       padding: 1rem;
+       
+    }
+
+    button{
+        background-color: transparent;
+        border: none;
+    }    
+
+    svg{
+        padding: 4px;
+        border-radius: 50px;
+        border: 2px solid yellow;
+        color: yellow;
+    }
+
+    svg:hover{
+        background-color: yellow;
+        border: black;
+        color: black;
+        box-shadow: 6px 6px 0 0 rgba(255, 255, 0, 0.253);
+        transition: .4s all ease; 
+    }
+}
+
+.imagesAboutUs{
+    background-color: black;
+    padding-bottom: 1rem;
+    padding-top:3.5rem;
+    
+}
+
+
+ngb-carousel{
+    padding-bottom: 1rem;
+    text-align: center;
+   padding-left: 1rem;
+   padding-right: 1rem;
+  
+    
+    img{
+        border-radius: .5rem;
+        color: yellow;
+        min-width: 100%;
+      
+     
+        
+    
+        align-items: center;
+        justify-content: center;
+
+        
+        min-height: 10%;
+        background: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition:  1s all ease-in;
+        
+       
+    }
+
+    span{
+        color: yellow;
+    }
+  
+    
+}
+
