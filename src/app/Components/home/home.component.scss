@@ -46,29 +46,44 @@
 .imagesAboutUs{
     background-color: black;
     padding-bottom: 1rem;
+    padding-top:3.5rem;
+    
 }
 
 
 ngb-carousel{
-    padding-top:3.5rem;
+    
     text-align: center;
     background-color: rgba(0, 0, 0, 0.024);
-    min-height: 500px;
-
+     /*
     .picsum-img-wrapper{
-    
-       
-        justify-content: center;
-        align-items: center;
-        user-select: none;
-        background: #ccc;
-        height: 460px;
+        align-self: stretch;
+        display: flex;
+        overflow: hidden;
     }
+     */
+    
     img{
-        width: 100%;
+        border-radius: .5rem;
+        color: yellow;
+
+        /*
+         float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
         height: 100%;
-        
-        
+        background: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition:  1s all ease-in;
+        */
+       
+    }
+
+    span{
+        color: yellow;
     }
   
     
