@@ -4,10 +4,74 @@
     padding-bottom: 20rem;
     color: rgba(255, 255, 0, 0.383);
     p{
-        
+       text-align: justify; 
        font-size: 2rem;
        color: rgba(255, 255, 0, 0.383);
     }
+    .texto{
+        margin-top: 4rem;
+        background-color: rgba(128, 128, 128, 0.307);
+        padding: 4rem;
+        text-align: justify;
+
+        h1{
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 2rem;
+        }
+
+        .p1{
+            color: white;
+            font-size: 1rem;
+            padding-left: 5px;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            padding-right: 5px;
+        }
+        .p1:hover{
+            color: rgba(255, 255, 0, 0.383);
+            padding-right: 5px;
+            border-left: 3px solid green;
+            background-color: rgba(128, 128, 128, 0.412);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .p2{
+            color: white;
+            font-size: 1rem;
+            padding-left: 5px;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            padding-right: 5px;
+        }
+        .p2:hover{
+            color: rgba(255, 255, 0, 0.383);
+            border-left: 3px solid green;
+            background-color: rgba(128, 128, 128, 0.412);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .p3{
+            color: white;
+            font-size: 1rem;
+            padding-left: 5px;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            padding-right: 5px;
+        }
+        .p3:hover{
+            color: rgba(255, 255, 0, 0.383);
+            border-left: 3px solid green;
+            background-color: rgba(128, 128, 128, 0.412);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+
+   
 
     .underBtn{
         

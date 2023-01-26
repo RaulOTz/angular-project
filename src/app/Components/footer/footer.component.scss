@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6,
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
-  transition: .3s all ease; 
+  transition: .3s all ease;
 }
   a, a:hover {
     text-decoration: none !important; 
@@ -31,6 +31,7 @@ a {
 
   .footer-20192 .container {
     position: relative; 
+    
   }
 
   .footer-20192 h3 {
@@ -44,10 +45,12 @@ a {
     margin-bottom: 10px;
     line-height: 1.5;
     display: block; 
+    
   }
 
     .footer-20192 .links li a {
       color: #666873; 
+      
     }
 
       .footer-20192 .links li a:hover {
@@ -60,28 +63,33 @@ a {
   }
 
     .footer-20192 .social li a {
-      position: relative;
+      
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      display: inline-block;
       margin: 0;
       padding: 0;
-      background-color: rgba(128, 128, 128, 0.893);
-      color: #fff; 
+     
+    }
+  
+
+    svg{
+      padding: 4px;
+      border-radius: 50px;
+      border: .1px;
+    
     }
 
-      .footer-20192 .social li a > span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); 
-      }
+    svg:hover{
+      background-color: rgb(148, 148, 227);
+      color: white;  
+      box-shadow: 6px 6px 0 0 rgb(148, 148, 227);
+      transition: .4s all ease; 
+    }
+    
 
   .footer-20192 .footer-logo {
-    color: #fff;
+    color: #fff; 
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: .1rem; 
@@ -105,4 +113,5 @@ a {
     }
     
     .footer-20192 .cta h3 {
-      font-size: 20px; }
+      font-size: 20px; 
+    }

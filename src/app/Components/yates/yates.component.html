@@ -1,0 +1,68 @@
+<div class="imagesAboutUs">
+    <ngb-carousel class="carousel carousel-dark slide" *ngIf="url">
+    
+        <ng-template ngbSlide>
+        
+            <div class="picsum-img-wrapper">
+                <img class="img-fluid" [src]="url" alt="Random first slide" />
+            </div>
+              
+        </ng-template>
+        
+        <ng-template ngbSlide>
+        
+            <div class="picsum-img-wrapper">
+                <img class="img-fluid" [src]="url2" alt="Random second slide" />
+            </div>
+               
+        </ng-template>
+        
+        <ng-template ngbSlide>
+        
+            <div class="picsum-img-wrapper">
+                <img class="img-fluid" [src]="url3" alt="Random third slide" />
+            </div>
+               
+        </ng-template>
+        
+            
+            
+        
+    </ngb-carousel>
+    
+
+
+</div>
+
+
+
+
+
+
+<div class="AboutUs">
+    
+    
+        <div class="contentAboutUs" *ngIf="element == true">
+            <div class="underBtn">
+                <p>Sobre Nosotros</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odit vero numquam non, harum quaerat distinctio accusamus aut adipisci molestias libero. Iste mollitia accusamus tempore possimus explicabo molestias eum ducimus.
+            </div>
+           
+         
+        </div>
+    
+        <button *ngIf="element == false" (click)="showData()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 14">
+                <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+            </svg>
+        </button>
+        <button *ngIf="element == true" (click)="hideData()">
+    
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 18">
+                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+              </svg>
+        </button>
+
+
+   
+</div>

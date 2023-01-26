@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   }
 
 
- 
+  logo= "./assets/logo - copia.png"
   
   url = "./assets/Home/gif.gif"
 
