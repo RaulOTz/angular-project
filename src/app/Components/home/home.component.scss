@@ -43,24 +43,10 @@
         .Tp2{
             background-color: rgba(128, 128, 128, 0.133);
             color: rgba(255, 255, 0, 0.383);
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-align: center;
             padding-top: 1rem;
             padding-bottom: .5rem;
-        }
-        .p2{
-            color: white;
-            border-left: .5rem solid white;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-
-          
-            font-size: 2rem;
-            padding-bottom: 1rem;
-            padding-top: 1rem;
-            padding-left: 5rem;
-            padding-right: 20rem;
-            text-align: justify;
         }
        
 
@@ -68,26 +54,19 @@
         .Tp3{
             background-color: rgba(128, 128, 128, 0.133);
             color: rgba(255, 255, 0, 0.383);
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-align: center;
             padding-top: 1rem;
             padding-bottom: .5rem;
             margin-top: 10rem;
             width: 100%;
         }
-        .p3{
-            color: white;
-            border-left: .5rem solid white;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
+       
 
-          
-            font-size: 2rem;
-            padding-bottom: 1rem;
-            padding-top: 1rem;
-            padding-left: 5rem;
-            padding-right: 20rem;
-            text-align: justify;
+        .content{
+            color: white;
+            padding-left: 4rem;
+            padding-right: 4rem;
         }
         
     }
