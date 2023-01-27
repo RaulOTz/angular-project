@@ -24,11 +24,11 @@ export class HomeComponent implements OnInit {
   }
 
 
-  logo= "./assets/logo - copia.png"
+  logo= "./assets/logo.png"
   
   url = "./assets/Home/gif.gif"
 
-  url2="./assets/Home/M2.jpg"
+  url2="./assets/Home/anim.png"
 
   url3= "./assets/Home/M3.jpg"
 
