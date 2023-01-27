@@ -7,7 +7,7 @@
     
     .IMG{
         padding-top: 5rem;
-        background-color: rgba(128, 128, 128, 0.765);
+        background-color: rgba(128, 128, 128, 0.071);
         
 
 
@@ -19,41 +19,45 @@
 
 
     .texto{
-        background-color: rgba(128, 128, 128, 0.307);
-        padding: 4rem;
+        background-color: black;
         text-align: justify;
+        padding-bottom: 5rem;
     
         h1{
             color: white;
             text-align: center;
             text-transform: uppercase;
             padding-bottom: 2rem;
+            padding-top: 2rem;
         }
     
         .p1{
-            color: white;
-            font-size: 1rem;
-            padding-left: 5px;
-            padding-bottom: 2rem;
-            padding-top: 2rem;
-            padding-right: 5px;
-        }
-        .p1:hover{
             color: rgba(255, 255, 0, 0.383);
-            padding-right: 5px;
-            border-left: 3px solid green;
-            background-color: rgba(128, 128, 128, 0.412);
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 4rem;
         }
+            
     
+        .Tp2{
+            background-color: rgba(128, 128, 128, 0.133);
+            color: rgba(255, 255, 0, 0.383);
+            font-size: 1.5rem;
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: .5rem;
+        }
         .p2{
             color: white;
             font-size: 1rem;
-            padding-left: 5px;
+            margin-left: 5rem;
+            margin-right: 5rem;
             padding-bottom: 2rem;
             padding-top: 2rem;
+            padding-left: 5px;
             padding-right: 5px;
+            text-align: justify;
         }
         .p2:hover{
             color: rgba(255, 255, 0, 0.383);
@@ -62,14 +66,28 @@
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
         }
-    
+
+
+        .Tp3{
+            background-color: rgba(128, 128, 128, 0.133);
+            color: rgba(255, 255, 0, 0.383);
+            font-size: 1.5rem;
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: .5rem;
+            margin-top: 10rem;
+            width: 100%;
+        }
         .p3{
             color: white;
             font-size: 1rem;
-            padding-left: 5px;
+            margin-left: 5rem;
+            margin-right: 5rem;
             padding-bottom: 2rem;
             padding-top: 2rem;
+            padding-left: 5px;
             padding-right: 5px;
+            text-align: justify;
         }
         .p3:hover{
             color: rgba(255, 255, 0, 0.383);
@@ -82,47 +100,6 @@
 }
 
 
-.prueba1 {
     
-    position: absolute;
-    display: flex;
-    height: 15rem;
-    width: 20%;
-    background-color: #17141d;
-    border-radius: 10px;
-    border-right: 2px yellow solid;
 
-    .title{
-        padding-left: .5rem;
-        padding-top: 50%;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-}
 
-.prueba2{
-   
-    text-align: justify;
-    border-radius: 10px;
-    height: 15rem;
-    width: 25%;
-    background-color: #17141d;
-    
-    p{
-        text-align: justify;
-        font-size: 1px
-    }
-    
-}
-
-.prueba2:hover{
-    p{
-        padding: 4rem;
-        font-size: 1rem;
-    }
-    width: 60%;
-    transition: 0.4s ease-out;
-    text-align: justify;
-    margin-left: 21%;
-}
-   
