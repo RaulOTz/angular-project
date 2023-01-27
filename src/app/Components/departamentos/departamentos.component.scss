@@ -16,62 +16,72 @@
 
 
 
-.containerInf{
-    background-color: black;
-    padding-bottom: 20rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 4rem;
-    margin-top: -1rem;
-    
 
-    
-    .title{
-        text-align: center;
-        border: 4px solid rgba(128, 128, 128, 0.307);
-    }
-    
-    ngb-carousel{
-        text-align: center;
-        background-color: rgba(128, 128, 128, 0.307);
-    }
 
-    .btnW{
-        background-color: rgba(128, 128, 128, 0.634);
-        text-align: center;
-    
-        
-        width: 100%;
-        color: yellow;
-        padding: 1rem;
-        text-decoration: none;
-        display: flex;
-        text-align: center;
 
-        transition: all .5s;
 
-        
-            
-         
-        svg{
-            color: yellow;
-            margin-left: .5rem;
-        }
-            
-        
-        
-    }
-
-    
-    .btnW:hover{
-        background-color: rgba(128, 128, 128, 0.135);
-        border-top: 2px solid yellowgreen;
-    }
+.folder{
+    display: flex;
+    height: 280px;
+    width: 17%;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+ 
+    transition: 0.4s ease-out;
+    position: absolute;
  
 }
-
-
-.content{
-    margin-bottom: 3rem;
-}
-
+  
+  .container {
+    padding-top: 4rem;
+    display: flex;
+    background-color: black;
+  }
+  
+  .card {
+    padding-right: 7rem;
+    display: flex;
+    height: 280px;
+    width: 17%;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 4rem;
+    p{
+        text-align: justify;
+        position: absolute;
+        padding-right: 7rem;
+    }
+    
+  }
+  
+  
+  
+  .card:hover {
+    transform: translateX(6.5rem);
+    transition: 0.4s ease-out;
+    padding-left: 60%;
+    left: 5rem;
+  }
+  
+ 
+  
+  .title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+  
+  .bar {
+    position: absolute;
+    
+    
+    
+  }
+  
+  
