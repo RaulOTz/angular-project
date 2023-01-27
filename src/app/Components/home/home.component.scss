@@ -49,23 +49,21 @@
             padding-bottom: .5rem;
         }
         .p2{
-            color: white;
-            font-size: 1rem;
-            margin-left: 5rem;
-            margin-right: 5rem;
-            padding-bottom: 2rem;
-            padding-top: 2rem;
-            padding-left: 5px;
-            padding-right: 5px;
-            text-align: justify;
-        }
-        .p2:hover{
             color: rgba(255, 255, 0, 0.383);
             border-left: 3px solid green;
             background-color: rgba(128, 128, 128, 0.412);
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
+            
+            font-size: 1rem;
+            margin-right: 1rem;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: justify;
         }
+       
 
 
         .Tp3{
@@ -79,23 +77,22 @@
             width: 100%;
         }
         .p3{
-            color: white;
-            font-size: 1rem;
-            margin-left: 5rem;
-            margin-right: 5rem;
-            padding-bottom: 2rem;
-            padding-top: 2rem;
-            padding-left: 5px;
-            padding-right: 5px;
-            text-align: justify;
-        }
-        .p3:hover{
             color: rgba(255, 255, 0, 0.383);
             border-left: 3px solid green;
             background-color: rgba(128, 128, 128, 0.412);
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
+
+          
+            font-size: 1rem;
+            margin-right: 1rem;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: justify;
         }
+        
     }
 }
 
