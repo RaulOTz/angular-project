@@ -13,8 +13,8 @@ export class HotelesComponent implements OnInit {
   
   }
 
-  url = "./assets/logo.png"
+  url = "./assets/Home/IMG1.jpg"
 
-  url2="./assets/logo - copia.png"
+ 
 
 }

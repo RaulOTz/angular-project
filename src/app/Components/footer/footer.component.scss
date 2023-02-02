@@ -22,11 +22,16 @@ a {
   height: 70vh; 
 }
 
+
+
+//Background
 .footer-20192 {
   position: relative;
   color: #fff;
-  padding: 7rem 0;
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
   background-color: rgb(0, 0, 0); 
+  opacity: 0.3;
 }
 
   .footer-20192 .container {
@@ -73,19 +78,7 @@ a {
     }
   
 
-    svg{
-      padding: 4px;
-      border-radius: 50px;
-      border: .1px;
-    
-    }
-
-    svg:hover{
-      background-color: rgb(148, 148, 227);
-      color: white;  
-      box-shadow: 6px 6px 0 0 rgb(148, 148, 227);
-      transition: .4s all ease; 
-    }
+   
     
 
   .footer-20192 .footer-logo {

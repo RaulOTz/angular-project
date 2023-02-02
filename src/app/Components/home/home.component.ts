@@ -8,6 +8,7 @@ import { timeInterval } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
   element = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -17,6 +18,7 @@ export class HomeComponent implements OnInit {
 
   showData() {
     return (this.element = true);
+
   }
   
   hideData() {
@@ -24,12 +26,11 @@ export class HomeComponent implements OnInit {
   }
 
 
-  logo= "./assets/logo.png"
   
-  url = "./assets/Home/Homegif.gif"
+  url = "./assets/Home/IMG1.jpg"
 
-  url2="./assets/Home/anim.png"
+  url2="./assets/Home/IMG2.jpg"
 
-  url3= "./assets/Home/M3.jpg"
+ 
 
 }

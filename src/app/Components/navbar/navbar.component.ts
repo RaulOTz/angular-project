@@ -13,5 +13,5 @@ export class NavbarComponent implements OnInit {
     
   }
 
-  LogoUrl = "./assets/logo - copia.png"
+  LogoUrl = "./assets/Navbar/logo - copia.png"
 }

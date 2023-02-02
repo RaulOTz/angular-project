@@ -1,49 +1,74 @@
-<div class="AboutUs">
-    <div class="IMG">
-       
-        <img id="I2" class="img img-fluid" [src]="logo" alt="">
-    </div>
-
-
-    <div>
-        <app-animation></app-animation>
-    </div>
-
-    <div class="texto">
-        <h1>Sobre Nosotros</h1>
-
-        <br>
+<section *ngIf="element == false">
+    <div  class="Home_Section">
+        <div class="imgIn-flex">
+            <img id="I2" [src]="url" alt="" >
     
-        <p class="Tp2">¿Quiénes somos?</p>
-       <div class="content">
-        Somos una agencia turística con sede en Mazatlán Sinaloa, 
-        México, 100% segura, 
-        responsable y comprometida con brindarles a nuestros clientes el mejor servicio, 
-        ofreciéndole las mejores tarifas en hotelería, departamentos vacacionales, 
-        paseos/tours y renta de yates.
-       </div>
-       
+            <h1 class="u-custom-font u-font-titillium-Web u-text u-text-body-alt-color u-title u-text-1">Vacaciona <br> seguro con <br> Club Travel</h1>
+            <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-2">UNA MANERA MÁS FÁCIL DE VIAJAR</p>            
+                 
+            
+            <div class="Facebook">
+                <!-- <h3>Facebook</h3> -->
+
+                <a class="FacebookIcon" href="https://www.facebook.com/ClubTravelMaz">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill=" #ffff" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a>
+            </div>
+           
+           
+
+            <button *ngIf="element == false" (click)="showData()" >Sobre nosotros</button>
+            
+
+                
+            
         
-        <br>
-    
-        <p class="Tp3">¿Qué ofrecemos?</p>
-       
-        <div class="content">
-            Ofrecemos a nuestros clientes más de 45 hoteles en el puerto de Mazatlán 
+        </div>    
+    </div>
+   
+
+</section>
+
+
+
+<div  class="Home"  *ngIf="element == true">
+    <div class="in-flex">
+        <img class="img img-fluid" [src]="url2" alt="">
+        <a *ngIf="element == true" (click)="hideData()" >Back</a>
+    </div>
+        
+    <div class="in-flex">
+        <div id="btn" class="content">
+            <p class="Tp">¿Quiénes somos?</p>
+            
+            <p> 
+            Somos una agencia turística con sede en Mazatlán Sinaloa, 
+            México, 100% segura, 
+            responsable y comprometida con brindarles a nuestros clientes el mejor servicio, 
+            ofreciéndole las mejores tarifas en hotelería, departamentos vacacionales, 
+            paseos/tours y renta de yates. 
+            </p>
+                
+            <br><br><br><br>
+
+            <p class="Tp">¿Qué ofrecemos?</p>
+            <p>
+            Ofrecemos a nuestrbros clientes más de 45 hoteles en el puerto de Mazatlán 
             donde podrán elegir el que más se ajuste a su presupuesto y/o necesidades, 
             departamentos vacacionales, paseos/tours y reta de yates. Brindando seguridad, 
             amabilidad y confianza en cada compra.
-
+            </p>
         </div>
-        
-
-      
     </div>
-    
 
-
-    
+  
 </div>
 
- 
+
+
+
+
+
 

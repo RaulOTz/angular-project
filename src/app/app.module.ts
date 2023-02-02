@@ -11,7 +11,7 @@ import { YatesComponent } from './Components/yates/yates.component';
 import { HomeComponent } from './Components/home/home.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AnimationComponent } from './Components/Home/animation/animation.component';
+
 
 
 
@@ -26,7 +26,7 @@ import { AnimationComponent } from './Components/Home/animation/animation.compon
     YatesComponent,
     HomeComponent,
     FooterComponent,
-    AnimationComponent
+
   ],
   imports: [
     BrowserModule,
