@@ -1,9 +1,29 @@
-section{
+.section1{
+    background-color: #ffff;
+    height: 500px;
+
+    .content{
+        
+        h1{
+            padding-top: 6em;
+            color: black;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+.section2{
     height: 100rem;
     width: 100%;
 
     .BackFeed{
-        padding: 2rem;
+        padding-top: 4rem;
         background-color: none;
         width: 100%;
         height: 100%;
@@ -12,32 +32,36 @@ section{
             
             background-color: #ffff;
             width: 100%;
-            height: 700px;
-            
+            height: 100vw;
+            padding: 1rem;
             .template{
 
-                background-color: yellow;
-                width: 100%;
-                height: 600px;
-                
+             
               
             }
 
             .picsum-img-wrapper{
-                
+                padding-left: 8vw;
+                padding-right: 8vw;
                 background-color: red;
                 width: 100%;
-                height: 700px;
+                height: 80vw;
                 
                 .carousel{
-                    height: 500px;
+                    height: 60vw;
                     background-color: blue;
+                   
 
                     img{
-                        padding: 2rem;
+                        
                         width: 100%;
-                        height: 100%;
+                        height: 40vw;
 
+                        min-height: 10%;
+                        background: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        transition:  1s all ease-in;
 
                     }
                 }
