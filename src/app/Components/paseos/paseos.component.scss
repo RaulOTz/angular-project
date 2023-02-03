@@ -34,7 +34,7 @@
            
             background-color: transparent;
             width: 100%;
-            height: 95vw;
+            height: 115vw;
             padding: 1rem;
    
 
@@ -49,11 +49,16 @@
                 padding-left: 8vw;
                 padding-right: 8vw;
                 width: 100%;
-                height: 87vw;
+                height: 100vw;
                 background-color: transparent;
+
+              
+                    
+                
 
 
                 h3{
+                    background-color: #ffff;
                     font-size: 5vw;
                     padding: .5rem;
                     text-align: center;
@@ -64,14 +69,18 @@
 
                 .in-flex{
                     display: flex;
+                    min-width: 250px;
+                    flex-wrap: wrap;
 
                     p{
+                        
+                        flex: 1;
                         text-align: justify;
-                        font-size: 1.6vw;
+                        font-size: 1.9vw;
                         font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                        padding: 1vw;
-                        width: 50vw;
-                        height: 55vw;
+                        padding: 2vw;
+                        width: 60vw;
+                        height: 75vw;
                         background-color: #ffff;
                         
                     }
