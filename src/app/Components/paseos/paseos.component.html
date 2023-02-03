@@ -22,28 +22,45 @@
             
                 <div class="picsum-img-wrapper">
                     <h3>Faro Mazatlán</h3>
+                    <div class="in-flex">
+                        <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imageFaro">
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageFaro" [alt]="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageFaro2" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageFaro3" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageFaro4" alt="">
+    
+                            </ng-template>
+                        </ngb-carousel>
+    
+                        <p>
+                            FaroMazatlan City Tour y faro de Mazatlán. 
+                            <br><br>
+                            Visita el faro natural más alto de Mexico 
+                            y el que es considerado uno de los más grandes del mundo. ⛰️
+                            Lo que hoy conocemos como el Faro de Mazatlán, 
+                            uno de los faros naturales más altos del mundo, 
+                            está asentado en lo que antiguamente era una isla. 
+                            En el año de 1828 la Isla del Crestón se empieza a 
+                            utilizar para el señalamiento marítimo para el puerto de 
+                            Mazatlán, hasta 1930 cuando se realizaran los trabajos 
+                            necesarios para unir este cuerpo de tierra separado 
+                            del puerto y que quedara unido por la escollera como 
+                            lo conocemos hoy.
 
-                    <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imageFaro">
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageFaro" [alt]="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageFaro2" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageFaro3" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageFaro4" alt="">
-
-                        </ng-template>
-                    </ngb-carousel>
-
-                    <p></p>
-                    <a href="">Reservar vía WhatsApp</a>
+                        </p>
+                    </div>
+                    
+                    <a href="https://thumbs.dreamstime.com/z/emoticon-del-dedo-medio-29087595.jpg " target="_blank">Reservar vía WhatsApp</a>
                     <!-- <img class="img-fluid" [src]="url" alt="Random first slide" /> -->
                 </div>
                   
@@ -60,31 +77,42 @@
             
                 <div class="picsum-img-wrapper">
                     <h3>Acuario Mazatlán</h3>
-                    <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imageAcuario">
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageAcuario" [alt]="">
 
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageAcuario2" alt="">
+                    <div class="in-flex">
+                        <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imageAcuario">
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageAcuario" [alt]="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageAcuario2" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageAcuario3" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageAcuario4" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageAcuario5" alt="">
+    
+                            </ng-template>
+                        </ngb-carousel>
+    
+                        <p>
+                            AcuarioMazatlan City Tour y acuario Mazatlan. 
+                            <br><br>
+                            Conoce el acuario de Mazatlán y disfruta de sus 
+                            tradicionales espectáculos en vivo con animales marinos 
+                            y nado con tiburones.
 
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageAcuario3" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageAcuario4" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageAcuario5" alt="">
-
-                        </ng-template>
-                    </ngb-carousel>
-
-                    <p></p>
-                    <a href="">Reservar vía WhatsApp</a>
+                        </p>
+                    </div>
+                    
+                    <a href="https://thumbs.dreamstime.com/z/emoticon-del-dedo-medio-29087595.jpg " target="_blank">Reservar vía WhatsApp</a>
                 </div>
                    
             </ng-template>
@@ -105,31 +133,41 @@
             
                 <div class="picsum-img-wrapper">
                     <h3>10 Islas Mazatlán</h3>
-                    <ngb-carousel class="carousel carousel-dark slide"  *ngIf="image10Islas">
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="image10Islas" [alt]="">
 
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="image10Islas2" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="image10Islas3" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="image10Islas4" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="image10Islas5" alt="">
-
-                        </ng-template>
-                    </ngb-carousel>
-
-                    <p></p>
-                    <a href="">Reservar vía WhatsApp</a>
+                    <div class="in-flex">
+                        <ngb-carousel class="carousel carousel-dark slide"  *ngIf="image10Islas">
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="image10Islas" [alt]="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="image10Islas2" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="image10Islas3" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="image10Islas4" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="image10Islas5" alt="">
+    
+                            </ng-template>
+                        </ngb-carousel>
+    
+                        <p>
+                            Las 10 islas más bellas y famosas del puerto.
+                            A bordo de una lancha semirrígida de alta velocidad 
+                            recorremos la bahía mientras descubrimos diferentes 
+                            islas, islotes, rocas y playas que nos regalan 
+                            la oportunidad perfecta para tomar fotografías.
+                        </p>
+                    </div>
+                    
+                    <a href="https://thumbs.dreamstime.com/z/emoticon-del-dedo-medio-29087595.jpg " target="_blank">Reservar vía WhatsApp</a>
                 </div>
                    
             </ng-template>
@@ -146,31 +184,43 @@
             
                 <div class="picsum-img-wrapper">
                     <h3>Avistamiento De Ballenas</h3>
-                    <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imageBallenas">
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageBallenas" [alt]="">
 
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageBallenas2" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageBallenas3" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageBallenas4" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageBallenas5" alt="">
-
-                        </ng-template>
-                    </ngb-carousel>
-
-                    <p></p>
-                    <a href="">Reservar vía WhatsApp</a>
+                    <div class="in-flex">
+                        <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imageBallenas">
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageBallenas" [alt]="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageBallenas2" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageBallenas3" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageBallenas4" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageBallenas5" alt="">
+    
+                            </ng-template>
+                        </ngb-carousel>
+    
+                        <p>
+                            Ya conoces de cerca a estos bellos animales marinos?
+                            <br><br>
+                            Con el invierno llegan a Mazatlán las gigantes más 
+                            gentiles del océano — las ballenas jorobadas. 
+                            En este tour disfrutarás de un divertido recorrido 
+                            por la bahía en el que encontraremos multitud de 
+                            especies marinas.
+                        </p>
+                    </div>
+                
+                    <a href="https://thumbs.dreamstime.com/z/emoticon-del-dedo-medio-29087595.jpg " target="_blank">Reservar vía WhatsApp</a>
                 </div>
                    
             </ng-template>
@@ -187,28 +237,39 @@
             
                 <div class="picsum-img-wrapper">
                     <h3>Isla De Pajaros </h3>
-                    <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imagePajaros">
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imagePajaros" [alt]="">
 
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imagePajaros2" alt="">
+                    <div class="in-flex">
+                        <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imagePajaros">
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imagePajaros" [alt]="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imagePajaros2" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imagePajaros3" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imagePajaros4" alt="">
+    
+                            </ng-template>
+                           
+                        </ngb-carousel>
+    
+                        <p>
+                            Es considerado el hogar de más de 400 especies de aves y 
+                            considerada una de las más bonitas islas de Mazatlán.
 
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imagePajaros3" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imagePajaros4" alt="">
-
-                        </ng-template>
-                       
-                    </ngb-carousel>
-
-                    <p></p>
-                    <a href="">Reservar vía WhatsApp</a>
+                            Más de 400 especies de aves viven en la Isla de Pájaros.
+                            Si te encantan las aves, ¡debes poner esta aventura en tu lista 
+                            de tareas pendientes!
+                        </p>
+                    </div>
+                    
+                    <a href="https://thumbs.dreamstime.com/z/emoticon-del-dedo-medio-29087595.jpg " target="_blank">Reservar vía WhatsApp</a>
                 </div>
                    
             </ng-template>
@@ -226,28 +287,39 @@
             
                 <div class="picsum-img-wrapper">
                     <h3>Isla De Venados</h3>
-                    <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imageVenados">
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageVenados" [alt]="">
 
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageVenados2" alt="">
+                    <div class="in-flex">
+                        <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imageVenados">
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageVenados" [alt]="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageVenados2" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageVenados3" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageVenados4" alt="">
+    
+                            </ng-template>
+                          
+                        </ngb-carousel>
+    
+                        <p>
+                            Considerada la isla favorita de los sinaloenses.
+                            Las tres islas de Mazatlán son consideradas como uno 
+                            de los símbolos más importantes de la ciudad. 
+                            Son un espacio ecológico y recreativo. 
+                            Conoce la más popular, Isla de Venados.
 
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageVenados3" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageVenados4" alt="">
-
-                        </ng-template>
-                      
-                    </ngb-carousel>
-
-                    <p></p>
-                    <a href="">Reservar vía WhatsApp</a>
+                        </p>
+                    </div>
+                    
+                    <a href="https://thumbs.dreamstime.com/z/emoticon-del-dedo-medio-29087595.jpg " target="_blank">Reservar vía WhatsApp</a>
                 </div>
                    
             </ng-template>
@@ -265,28 +337,42 @@
             
                 <div class="picsum-img-wrapper">
                     <h3>La Noria Ruta vinata</h3>
-                    <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imageNoria">
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageNoria" [alt]="">
 
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageNoria2" alt="">
+                    <div class="in-flex">
+                        <ngb-carousel class="carousel carousel-dark slide"  *ngIf="imageNoria">
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageNoria" [alt]="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageNoria2" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageNoria3" alt="">
+    
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img class="img img-fluid" [src]="imageNoria4" alt="">
+    
+                            </ng-template>
+                          
+                        </ngb-carousel>
+    
+                        <p>
+                            La Noria es la primera vinata fundada en el puerto 
+                            de Mazatlán, y la productora del mejor mezcal del puerto, 
+                            ubicada en la noria Mazatlan, pueblito mágico.
 
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageNoria3" alt="">
-
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <img class="img img-fluid" [src]="imageNoria4" alt="">
-
-                        </ng-template>
-                      
-                    </ngb-carousel>
-
-                    <p></p>
-                    <a href="">Reservar vía WhatsApp</a>
+                            Mazatlán es mucho más que sol, arena y mar. 
+                            Las tierras del municipio de Mazatlán y del sur 
+                            de Sinaloa cuentan con una rica historia: 
+                            la producción de mezcal, la Revolución y otros 
+                            acontecimientos.
+                        </p>
+                    </div>
+                    
+                    <a href="https://thumbs.dreamstime.com/z/emoticon-del-dedo-medio-29087595.jpg " target="_blank">Reservar vía WhatsApp</a>
                 </div>
                    
             </ng-template>
@@ -304,3 +390,6 @@
 
     </div>
 </section>
+
+
+

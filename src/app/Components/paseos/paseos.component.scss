@@ -1,7 +1,7 @@
 .section1{
-    background-color: #ffff;
+    background-color: #f8833d;
     height: 500px;
-    opacity: 0.4;
+    
 
     .content{
         
@@ -25,15 +25,16 @@
     width: 100%;
 
     .BackFeed{
-        
+        background-image: linear-gradient( #f8833d, #ffce00 );
         background-color: none;
         width: 100%;
         height: 100%;
         
         .carousel{
-            background-color: rgba(0, 0, 0, 0.289);
+           
+            background-color: transparent;
             width: 100%;
-            height: 105vw;
+            height: 95vw;
             padding: 1rem;
    
 
@@ -61,10 +62,41 @@
                     font-weight: bold;
                 }
 
-                p{
-                    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+                .in-flex{
+                    display: flex;
 
+                    p{
+                        text-align: justify;
+                        font-size: 1.6vw;
+                        font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                        padding: 2vw;
+                        width: 50vw;
+                        height: 50vw;
+                        background-color: #ffff;
+                        
+                    }
+
+                    .carousel{
+                        height: 50vw;
+                        background-color: #ffff;
+                        border: none;
+    
+                        img{
+                            
+                            width: 100%;
+                            height: 40vw;
+                            background-color: #ffff;
+                            min-height: 10%;
+                            background: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            transition:  1s all ease-in;
+    
+                        }
+                    }
                 }
+
+               
 
                 a{
                     color: black;
@@ -77,24 +109,7 @@
                     background-image: linear-gradient(to right, #ffce00, #f8833d);
                 }
                 
-                .carousel{
-                    height: 60vw;
-                    background-color: #f8833d;
-                    border: none;
-
-                    img{
-                        
-                        width: 100%;
-                        height: 40vw;
-
-                        min-height: 10%;
-                        background: no-repeat;
-                        background-size: cover;
-                        background-position: center;
-                        transition:  1s all ease-in;
-
-                    }
-                }
+               
               
                
             }
