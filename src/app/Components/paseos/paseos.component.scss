@@ -1,10 +1,12 @@
 .section1{
     background-color: #ffff;
     height: 500px;
+    opacity: 0.4;
 
     .content{
         
         h1{
+            font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
             padding-top: 6em;
             color: black;
             text-align: center;
@@ -23,17 +25,19 @@
     width: 100%;
 
     .BackFeed{
-        padding-top: 4rem;
+        
         background-color: none;
         width: 100%;
         height: 100%;
         
         .carousel{
-            
-            background-color: #ffff;
+            background-color: rgba(0, 0, 0, 0.289);
             width: 100%;
-            height: 100vw;
+            height: 105vw;
             padding: 1rem;
+   
+
+
             .template{
 
              
@@ -43,14 +47,40 @@
             .picsum-img-wrapper{
                 padding-left: 8vw;
                 padding-right: 8vw;
-                background-color: red;
                 width: 100%;
-                height: 80vw;
+                height: 87vw;
+                background-color: transparent;
+
+
+                h3{
+                    font-size: 5vw;
+                    padding: .5rem;
+                    text-align: center;
+                    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                p{
+                    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+
+                }
+
+                a{
+                    color: black;
+                    padding-top: .7rem;
+                    padding-bottom: .7rem;
+                    padding-right: 1.5rem;
+                    padding-left: 1.5rem;
+                    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+                    text-decoration: none;
+                    background-image: linear-gradient(to right, #ffce00, #f8833d);
+                }
                 
                 .carousel{
                     height: 60vw;
-                    background-color: blue;
-                   
+                    background-color: #f8833d;
+                    border: none;
 
                     img{
                         
