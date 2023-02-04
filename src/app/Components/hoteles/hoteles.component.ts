@@ -13,7 +13,9 @@ export class HotelesComponent implements OnInit {
   
   }
 
-  url = "./assets/Home/IMG1.jpg"
+  url = "./assets/Paseos/La_Noria/4.jpeg"
+
+
 
  
 
