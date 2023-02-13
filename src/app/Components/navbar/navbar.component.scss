@@ -2,7 +2,7 @@
 
 .navbar {
     background-image: linear-gradient(#ffce00, #f8833d);
-
+    //opacity: 0.9;
     color: white;
     width: 100%;
     position: fixed;
@@ -19,17 +19,27 @@ img{
 }
 
 a{
+
     color: #ffffff;
+    font-weight: bold;
 }
 
 
 
 
+//FOR RESPONSIVE DESIGN PHONE USING MEDIA@
 /*
-
 li{
-    color: white;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin: 1vw;
+    background-color:  #f8823d91;
 }
+
+li:hover{
+    background-color: #f8833d;
+}
+
 */
 
 
