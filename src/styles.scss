@@ -22,7 +22,8 @@ body{
 
 @media (max-width: 1024px) {
     body {
-        background-color: slategrey;
+        
+       background-color: slategrey;
     }
 }
 
@@ -58,7 +59,8 @@ body{
 
 @media(max-width: 600px) {
     body {
-        background-color: turquoise;
+        background:linear-gradient( #f8833d, #ffce00) ;   
+        //background-color: turquoise;
     }
 }
 
