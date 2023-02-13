@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hoteles.component.scss']
 })
 export class HotelesComponent implements OnInit {
-
+  element = false;
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +17,15 @@ export class HotelesComponent implements OnInit {
   url = "./assets/Paseos/La_Noria/4.jpeg"
 
 
+
+  showData() {
+    return (this.element = true);
+
+  }
+  
+  hideData() {
+    return (this.element = false);
+  }
 
  
 
