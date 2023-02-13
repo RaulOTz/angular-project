@@ -29,16 +29,14 @@ body{
 
 @media (max-width: 1024px) and (orientation: landscape) {
     body {
-        background-color: black;
+        background:linear-gradient( #f8833d, #ffce00) ;   
     }
-    p {
-        color: white;
-    }
+ 
 }
 
 @media (max-width: 770px) {
     body {
-        background-color: chocolate;
+        background:linear-gradient( #f8833d, #ffce00) ;   
     }
 }
 
@@ -51,25 +49,22 @@ body{
 
 @media (max-width: 770px) and (orientation: landscape) {
     body {
-        background-color: darkblue;
+        background:linear-gradient( #f8833d, #ffce00) ;   
+        //background-color: darkblue;
     }
-    p {
-        color: red
-    }
-}
+
 
 @media(max-width: 600px) {
     body {
-        //background:linear-gradient( #f8833d, #ffce00) ;   
+        background:linear-gradient( #f8833d, #ffce00) ;   
         //background-color: turquoise;
     }
 }
 
 @media(max-width: 600px) and (orientation: landscape) {
     body {
-        background-color: royalblue;
+        //background-color: royalblue;
+        background:linear-gradient( #f8833d, #ffce00) ;   
     }
-    p {
-        color: plum;
-    }
+
 }
