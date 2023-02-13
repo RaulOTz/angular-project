@@ -6,6 +6,11 @@ body{
     
 
 }
-
+@media  (max-width: 991px){
+    body{
+        background-repeat: no-repeat;
+        background:linear-gradient( #f8833d, #ffce00) ;    width: 100%
+    }
+}
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
