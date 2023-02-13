@@ -24,31 +24,7 @@ a{
 }
 
 
-
-
-//FOR RESPONSIVE DESIGN PHONE USING MEDIA@
-/*
-li{
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin: 1vw;
-    background-color:  #f8823d91;
-}
-
-li:hover{
-    background-color: #f8833d;
-}
-
-*/
-
-
-
-
-
-
-
-
-
+   
 .navbar-toggler{
   border: 1px yellow solid;
 }
@@ -57,3 +33,32 @@ li:hover{
     color: yellow;
 }
 
+
+
+//FOR RESPONSIVE DESIGN PHONE USING MEDIA@
+/*
+
+
+*/
+
+@media (max-width: 991px){
+    .navbar{
+        
+        ul{
+            padding-top: 2vw;
+        }
+        li{
+            border-radius: 1vw;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            margin-right: 2vw;
+            margin-top: .5vw;
+            margin-bottom: .5vw;
+            background-color:  #f8823d91;
+        }
+        
+        li:hover{
+            background-color: #f8833d;
+        }
+    }
+    }
