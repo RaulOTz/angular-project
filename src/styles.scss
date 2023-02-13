@@ -21,45 +21,46 @@ body{
 
 @media (max-width: 1024px) {
     body {
-        background-color: blue;
+        background-color: #ffce00;
     }
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
     body {
-        background-color: gray;
+        background-color: #ffce00;
     }
 
 }
 
 @media (max-width: 770px) {
     body {
-        background-color: black;
+        background-color: #ffce00;
     }
 }
 
 @media (max-width: 770px) and (orientation: portrait) {
     body {
-        background-color: #ffff;
+        background-color: #ffce00;
     }
 }
 
 @media (max-width: 770px) and (orientation: landscape) {
     body {
-        background-color: yellow;
+        background-color: #ffce00;
     }
 
 }
 
+//my iphone
 @media(max-width: 600px) {
     body {
-        background-color: red;
+        background-color: #ffce00;
     }
 }
 
 @media(max-width: 600px) and (orientation: landscape) {
     body {
-        background-color: silver;
+        background-color: #ffce00;
     }
    
 }
