@@ -1,97 +1,99 @@
+
 section{
-    padding-top:25vw;
     width: 100%;
-    height: 200rem;
+    
+    //background:linear-gradient( #f8833d, #ffce00) ;
+    padding-bottom: 10vw;
+    padding-top:25vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+
+
 
     .BackFeed{
-        background-image: linear-gradient( #f8833d, #ffce00 );
-        background-color: none;
-        width: 100%;
-        height: 100%;
+        margin-bottom: 20vw;
+        border-radius: 4vw;
+        //background:linear-gradient( #f8833d, #ffce00) ;
+        //background-color: none;
+        background-color: #ffffff;
+      // background: linear-gradient(#ffff, rgb(183, 178, 178), #ffff);        
+       display: flex;
+        flex-wrap: wrap;
+        padding-top: 4vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-bottom: 6vw;
+
+      
+     
+
         
-        .carousel{
-           
-            background-color: transparent;
-            width: 100%;
-            height: 162vw;
-            padding: 1rem;
-   
+        //div flex
+        .in-flex{
+            flex: 1;
+            min-width: 250px;
 
-
-            .template{
-
-             
-              
-            }
-
-            .picsum-img-wrapper{
-                padding-left: 8vw;
-                padding-right: 8vw;
-                width: 100%;
-                height: 160vw;
-                background-color: transparent;
-
-              
-                    
+            ul{
+                //padding-top: 4vw;
                 
 
-
-                h3{
-                    background-color: #ffff;
-                    font-size: 5vw;
-                    padding: .5rem;
-                    text-align: center;
-                    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
-                    text-transform: uppercase;
-                    font-weight: bold;
-                }
-
-                .in-flex{
-                    
-                 
-
-                    p{
-                        
+                li{
+                    padding-bottom: 1vw;
+                  
+                    list-style: none;
+                    text-align: left;
+                    a{
                         color: black;
-                        text-align: justify;
-                        font-size: 3vw;
-                        font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                        padding: 2vw;
-                        
-                        
-                        background: linear-gradient(#a6dda2, #ffff);
-                        
+                        font-weight: bold;
+                        text-decoration: none;
                     }
-
-                    //carousel int
-                    .carousel{
-                        height: 60vw;
-                        background: linear-gradient(#ffff, #a6dda2);
-                        border: none;
-    
-                        img{
-                            
-                            width: 100%;
-                            
-                            background-color: #ffff;
-                            min-height: 10%;
-                            background: no-repeat;
-                            background-size: cover;
-                            background-position: center;
-                            transition:  1s all ease-in;
-    
-                        }
+                    .txt{
+                        text-align: left;
+                        margin-top: -1.5rem;
+                        margin-left: 1.3rem;
                     }
+                   
                 }
-
-               
-
-                
-               
-              
-               
             }
+           
+        
+
+            h3{
+                font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+                
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .carouselChild{
+                text-align: center;
+                padding-bottom: 1rem;
+                
+            }
+
+            button{
+                color: black;
+                font-weight: bold;
+               border: none;
+               background-color: transparent;
+            }
+           
+          
+           
+
+            p{
+                font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+               font-size: 1.7vw;
+                padding: 3vw;
+                text-align: justify;
             
+            }
+        
+          
+        
+                
+            .BTN{
+                text-align: center;
                 a{
                     margin-top: 20rem;
                     color: black;
@@ -102,15 +104,35 @@ section{
                     font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
                     text-decoration: none;
                     background: linear-gradient(to right, #ffce00, #f8833d);      
-                    transition: .2s all ease-in;              
-                } 
+                    transition: .2s all ease-in;   
+                }
+        
                 a:hover{
-                    
                     color: #ffff;
                     background: linear-gradient(to right, #f8833d, #ffce00);
-
+        
                 }
+            }
+
         }
 
+       
+       
+
     }
+
+    @media (max-width: 567px){
+        .BackFeed{
+            padding-top: .5vw;
+            padding-left: .5vw;
+            padding-right: .5vw;
+        }
+        
+        img{
+            border-top-right-radius: 4vw;
+            border-top-left-radius: 4vw;
+        }
+    }
+
+
 }
