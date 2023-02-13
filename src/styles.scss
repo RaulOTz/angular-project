@@ -12,9 +12,8 @@ body{
 }
 @media  (max-width: 1600px){
     body{
-        background-repeat: no-repeat;
-        background:linear-gradient( #f8833d, #ffce00) ;   
-         width: 100%
+        background-color: #f8823d91; 
+        
     }
 }
 
@@ -22,50 +21,45 @@ body{
 
 @media (max-width: 1024px) {
     body {
-        background:linear-gradient( #f8833d, #ffce00) ;   
-       //background-color: slategrey;
+        background-color: #f8823d91;
     }
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
     body {
-        background:linear-gradient( #f8833d, #ffce00) ;   
+        background-color: #f8823d91;
     }
- 
+
 }
 
 @media (max-width: 770px) {
     body {
-        background:linear-gradient( #f8833d, #ffce00) ;   
+        background-color: #f8823d91;
     }
 }
 
 @media (max-width: 770px) and (orientation: portrait) {
     body {
-        background:linear-gradient( #f8833d, #ffce00) ; 
-        //background-color: grey;
+        background-color: #f8823d91;
     }
 }
 
 @media (max-width: 770px) and (orientation: landscape) {
     body {
-        background:linear-gradient( #f8833d, #ffce00) ;   
-        //background-color: darkblue;
+        background-color: #f8823d91;
     }
-}
 
+}
 
 @media(max-width: 600px) {
     body {
-        background:linear-gradient( #f8833d, #ffce00) ;   
-        //background-color: turquoise;
+        background-color: #f8823d91;
     }
 }
 
 @media(max-width: 600px) and (orientation: landscape) {
     body {
-        //background-color: royalblue;
-        background:linear-gradient( #f8833d, #ffce00) ;   
+        background-color: #f8823d91;
     }
-
+   
 }
