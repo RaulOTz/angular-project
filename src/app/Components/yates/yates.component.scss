@@ -1,5 +1,193 @@
+
 section{
     width: 100%;
-    height: 200vw;
+    
+    //background:linear-gradient( #f8833d, #ffce00) ;
+    padding-bottom: 10vw;
+    padding-top:25vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+
+
+
+    .BackFeed{
+        margin-bottom: 20vw;
+        border-radius: 4vw;
+        //background:linear-gradient( #f8833d, #ffce00) ;
+        //background-color: none;
+        background-color: #ffffff;
+      // background: linear-gradient(#ffff, rgb(183, 178, 178), #ffff);        
+       display: flex;
+        flex-wrap: wrap;
+        padding-top: 4vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-bottom: 6vw;
+
+      
+     
+
+        
+        //div flex
+        .in-flex{
+            flex: 1;
+            min-width: 250px;
+            
+            .content{
+                padding-right: 4vw;
+                padding-left: 4vw;
+            }
+
+            ul{
+                //margin-left: -4vw;
+                place-items: center;
+
+
+                li{
+                   
+                  
+                    list-style: none;
+                    text-align: left;
+                    a{
+                        color: black;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                    .txt{
+                        text-align: justify;
+                        margin-top: -1.5rem;
+                        margin-left: 1.3rem;
+                        margin-right: 1rem;
+
+                       
+                    }
+
+                    //Precio
+                    .Precio{
+                        margin-right: 15rem;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+
+
+                    .TxtPrecio{
+                        text-align: left;
+                        margin-top: -2.9rem;
+                        margin-left: 4rem;
+                        color: black; 
+                        font-weight: bold; 
+                        font-size: 1.1rem; 
+                        padding-bottom: 2vw;  
+
+                       
+                    }
+
+                    //Capacidad Maxima
+                    .CapacidadM{
+                        margin-right: 8rem;
+                        padding-bottom: 1rem;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+
+                    .TxtCapacidad{
+                        text-align: left;
+                        margin-top: -3.5rem;
+                        margin-left: 10rem;
+                        color: black; 
+                       
+                        font-size: 1rem; 
+                        padding-bottom: 1vw;  
+                    }
+
+                    //Incluye
+                    .Incluye{
+                        padding-top: 1rem;
+                        margin-bottom: -1px;
+                        margin-left: -2.5vw;
+                        margin-right: 9rem;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+
+                    //Descripcion
+                    .Descripcion{
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                   
+                }
+            }
+           
+     
+
+            h3{
+                font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+                
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .carouselChild{
+                text-align: center;
+                padding-bottom: 1rem;
+                
+            }
+
+            img{
+                width: 100%;
+            }
+
+            button{
+                color: black;
+                font-weight: bold;
+               border: none;
+               background-color: transparent;
+            }
+           
+        
+          
+        
+                
+            .BTN{
+                text-align: center;
+                a{
+                    margin-top: 20rem;
+                    color: black;
+                    padding-top: .7rem;
+                    padding-bottom: .7rem;
+                    padding-right: 1.5rem;
+                    padding-left: 1.5rem;
+                    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+                    text-decoration: none;
+                    background: linear-gradient(to right, #ffce00, #f8833d);      
+                    transition: .2s all ease-in;   
+                }
+        
+                a:hover{
+                    color: #ffff;
+                    background: linear-gradient(to right, #f8833d, #ffce00);
+        
+                }
+            }
+
+        }
+
+       
+       
+
+    }
+
+    @media (max-width: 600px){
+        .BackFeed{
+            padding-top: 3.8vw;
+            padding-left: .0vw;
+            padding-right: .0vw;
+        }
+        
+     
+     
+    }
+
 
 }
