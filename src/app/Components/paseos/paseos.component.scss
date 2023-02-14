@@ -71,6 +71,10 @@ section{
                 
             }
 
+            img{
+                width: 100%;
+            }
+
             button{
                 color: black;
                 font-weight: bold;
@@ -121,12 +125,13 @@ section{
 
     }
 
-    @media (max-width: 544px){
+    @media (max-width: 600px){
         .BackFeed{
             padding-top: 3.8vw;
             padding-left: .0vw;
             padding-right: .0vw;
         }
+        
      
      
     }
