@@ -16,34 +16,154 @@
     </defs>
 </svg>
 
-
-
-
 <section>
 
+    <!-- BackFeed 1-->
     <div class="BackFeed">
         
         <div class="in-flex" id="flex1">
-
-           
-            
             <!-- Carousel -->
             <ngb-carousel class="carouselChild carousel-dark">
 
                 <ng-template ngbSlide>
                     <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
 
-                </ng-template>
+        <div class="in-flex">
+          
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>ALO SELECT MAZATLAN</h3>
+                <ul style="padding-top: 2vw;">
+                  
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                       
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                        </svg>
+                        <div class="txt">
+                            Habitaciones equipadas con aire acondicionado, baño privado con ducha, 
+                            teléfono y televisión de pantalla plana con canales por cable. 
+                            <br>
+                            Asimismo, tiene amenidades como secador de pelo, caja fuerte y radio reloj despertador.
+                            <br> 
+                            El hotel posee piscina climatizada e internet inalámbrico.
+                            <br>
+                            Brida servicio de ama de llaves, estacionamiento y servicio de café las 24 horas. 
+                            <br>
+                            También cuenta con un restaurante ofrece desayuno continental en cortesía y un bar lounge (con cargo adicional). 
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 850 metros del hotel está la playa pública Camarón Sábalo.
+                                </div>
+    
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 5 kilómetros se encuentra el Acuario Mazatlán, que exhibe a diferentes especies marinas del pacífico. 
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Aeropuerto Internacional de Mazatlán (MZT) está a 27 kilómetros.
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- BackFeed 2-->
+    <div class="BackFeed">
+        
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
 
                 <ng-template ngbSlide>
                     <img class="img img-fluid" [src]="url" alt="">
-
-                </ng-template>
-
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
             </ngb-carousel>
-            
         </div>
             
+
         <div class="in-flex">
           
             <!-- Descriptions -->
@@ -69,11 +189,9 @@
                     
                     
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-house-add-fill" viewBox="0 0 16 16">
-                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 1 1-1 0v-1h-1a.5.5 0 1 1 0-1h1v-1a.5.5 0 0 1 1 0Z"/>
-                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
-                            <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
                         <div class="txt">
                             piscina, salón de desayunos, terraza y sala de reuniones. <br>
                             Las habitaciones están equipadas con aire acondicionado, 
@@ -182,6 +300,2190 @@
 
         </div>
     </div>
+
+        
+    <!-- BackFeed 3-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>AZTECA INN</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            Restaurante de comida regional, además de un bar deportivo. 
+                            La propiedad también cuenta con piscina, acceso a wifi gratis, 
+                            un salón de eventos y centro de negocios. Azteca Inn dispone de estacionamiento privado, 
+                            servicio a la habitación y alquiler de autos. Las 74 habitaciones están equipadas 
+                            con aire acondicionado, televisión con canales por cable, acceso a internet inalámbrico 
+                            y secadora de pelo. 
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Acuario de Mazatlán se encuentra a 5 kilómetros.
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El centro histórico a 7 kilómetros.                                </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Aeropuerto de Mazatlán (MZT) está a 24 kilómetros.
+                                </div>
+                            </li>
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    La playa se encuentra a menos de 500 metros. 
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BackFeed 4-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>BEST WESTERN POSADA FREEMAN CENTRO HISTORICO</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="" target="_blank">Centro historico</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            72 espaciosas habitaciones y suites con vistas a la ciudad y al océano. 
+                            Todas incluyen entre sus amenidades aire acondicionado, televisión por cable, 
+                            baño privado con regadera y caja de seguridad. El hotel tiene un restaurante que 
+                            sirve desayuno bufet y un bar en el undécimo piso junto a la piscina. 
+                            El hotel también cuenta con una sala de juegos, máquinas de hielo, estacionamiento, 
+                            salas de reuniones y personal multilingüe entre otros servicios.
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    Edificios históricos del siglo XIX y XX.                                 </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    Plaza Machado                              </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    La Catedral 
+                                </div>
+                            </li>
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    Teatro Ángela Peralta.
+                                </div>
+                            </li>
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El aeropuerto de Mazatlán (MZT) está a 15 kilómetros                                 </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- BackFeed 5-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>BEST WESTERN POSADA FREEMAN ZONA DORADA</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            50 habitaciones y suites, todas cómodas y espaciosas. 
+                            Todas cuentan entre sus amenidades con aire acondicionado, 
+                            televisión por cable/satélite, baño privado con regadera y 
+                            acceso a internet inalámbrico. <br>
+                            Hay habitaciones libres de humo disponibles. <br>
+                            Restaurante y un bar que sirven comida internacional así como tu cóctel favorito. <br>
+                            El hotel también cuenta con una alberca, centro de negocios, 
+                            sala de reuniones para grupos pequeños, estacionamiento y personal 
+                            multilingüe entre otros servicios.
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    Islas del Océano Pacífico.                                 </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    Playa                              </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El aeropuerto de Mazatlán (MZT) está a 30 kilómetros
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 6-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>CAPITAL O ZONA DORADA INN</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            Restaurante y bar. Además, ofrece alquiler de autos y servicios de lavandería 
+                            (ambos con cargo extra). <br>
+                            Las habitaciones están equipadas con aire acondicionado, 
+                            televisión con canales pro cable, internet inalámbrico y baño privado con ducha. 
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 2 cuadras de la propiedad se encuentra la playa.             </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A menos de 1 kilómetro está el monumento a la familia.
+                                </div>
+                            </li>
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 3 kilómetros se halla el bosque de la ciudad y el acuario de Mazatlán. 
+                                </div>
+                            </li>
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Aeropuerto Internacional de Mazatlán (MZT) se sitúa a 24 kilómetros de distancia.
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 7-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>CASA LUCILA HOTEL BOUTIQUE</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="" target="_blank">centro de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            Hotel 4 estrellas, 8 habitaciones con televisión de pantalla plana. 
+                            La conexión a Internet wifi gratis te mantendrá en contacto con los tuyos; 
+                            también podrás ver tu programa favorito en el televisor con canales por cable. 
+                            El cuarto de baño está provisto de ducha y artículos de higiene personal de diseño. 
+                            Entre las comodidades, se incluyen caja fuerte, escritorio y teléfono con y llamadas locales gratuitas. 
+                            Servicios de negocios y otros, tendrás tintorería o lavandería, un servicio de recepción las 24 horas y 
+                            atención multilingüe a tu disposición.
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 1,8 km de El Faro. 
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 2,1 km de Playa Norte.                              </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 8 min a pie de Plaza Machado. 
+                                </div>
+                            </li>
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A unos pasos de Playa Olas Altas. 
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 8-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>CASA LULÚ HOTEL BOUTIQUE</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="" target="_blank">Mazatlán, Sinaloa. </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            Habitaciones, algunas con vistas al mar, equipadas con balcón o terraza, 
+                            aire acondicionado, baño privado y televisión con canales por cable. 
+                            Cuenta con piscina, camas de playa plegables, servicio de ama de llaves e 
+                            internet inalámbrico. 
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 2 kilómetros de las instalaciones está el Museo Arqueológico de Mazatlán.
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 4 kilómetros se encuentra el Acuario Mazatlán.             </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Aeropuerto Internacional General Rafael Buelna (MZT) está a 29 kilómetros.  </div>
+                            </li>
+
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 9-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>CITY EXPRESS MAZATLAN </h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            110 habitaciones equipadas con aire acondicionado, teléfono digital, 
+                            internet de alta velocidad, televisión por cable, radio reloj despertador 
+                            y para tu tranquilidad, sistema contra incendios. 
+
+                            Restaurante que sirve desayuno continental estilo bufet cada mañana, 
+                            un gimnasio y una piscina al aire libre. 
+
+                            Para viajeros de negocios, el hotel cuenta con una sala de juntas, 
+                            centro de negocios e internet inalámbrico en todas las áreas.
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 10 minutos del centro de la ciudad de Mazatlán.
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 1 kilómetro del malecón.                              </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Aeropuerto de Mazatlán (MZT) está a 25 kilómetros.
+                                </div>
+                            </li>
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 5 minutos de la estación central de autobuses. 
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 10-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>COMFORT INN MAZATLAN</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            Piscina, gimnasio, restaurante, servicios de lavandería y transportación gratuita 
+                            en el área local (aplican restricciones). 
+
+                            Ideal para aquellos que viajan por trabajo, el alojamiento cuenta con centro 
+                            de negocios, wifi en todas sus áreas y salones de eventos. 
+
+                            Las habitaciones están equipadas con aire acondicionado, baño privado con ducha, 
+                            teléfono, televisión con canales por cable, mesa de trabajo, cafetera, 
+                            radio despertador, conexiones USB y caja de seguridad.
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 1 kilómetro de la Marina Mazatlán.
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 2 kilómetros de Playa Cerritos.                             </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 8 kilómetros del Acuario de Mazatlán y jardín botanico.
+                                </div>
+                            </li>
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Aeropuerto Internacional General Rafael Buelna (MZT) se localiza a 33 kilómetros.
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 11-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>CORAL ISLAND BEACH VIEW HOTEL</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="" target="_blank">Malecón Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            82 habitaciones y suites. Todas cuentan con aire acondicionado, 
+                            baño privado con ducha, televisión con pantalla plana y máquina para hacer té o café. 
+
+                            Las suites cuentan además con una terraza privada y jacuzzi exterior. 
+
+                            La propiedad ofrece un restaurante y un bar, así como una piscina panorámica 
+                            y un gimnasio totalmente equipado. 
+
+                            El hotel también cuenta con un centro de negocios, 
+                            salas de reuniones para grupos pequeños, servicio de niñera, acceso a 
+                            internet inalámbrico y estacionamiento. Para tu comodidad, 
+                            hay un túnel de acceso a la playa equipado con ducha, rampa de acceso, iluminación 
+                            y seguridad.
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 1 kilómetro del Acuario.
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 3 kilómetros de la Zona Dorada.                               </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El aeropuerto de Mazatlán (MZT) está a 35 kilómetros de distancia. 
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 12-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>COSTA DE ORO BEACH HOTEL</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            230 cómodas habitaciones y suites, decoradas al estilo mexicano. 
+                            Todas incluyen aire acondicionado, baño privado con ducha, 
+                            televisión por cable/satélite y mesa con sillas.
+
+                            Las suites de un dormitorio cuentan además con una cocineta completamente equipada. 
+                            Internet inalámbrico está disponible en las habitaciones. 
+
+                            Costa de Oro Beach Hotel tiene una piscina temática tipo playa con un área especial 
+                            para los niños más pequeños. 
+
+                            Los adultos pueden disfrutar del jacuzzi o pasear por la playa. 
+                            El hotel también cuenta con un restaurante, un bar y una cafetería. 
+                            Otros servicios igualmente disponibles son canchas de tenis, acceso a internet 
+                            inalámbrico en áreas públicas, cajas de seguridad, minisúper y estacionamiento.
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Acuario está a 3.7 km y el centro de Mazatlán. 
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Aeropuerto de Mazatlán (MZT) está a 30 kilómetros.
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 13-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>DON PELAYO PACIFIC BEACH </h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="" target="_blank">Malecón Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            162 habitaciones y suites decoradas en tonos suaves y 
+                            equipados con todo lo necesario para una estancia relajante. 
+
+                            Las amenidades incluyen aire acondicionado, baño privado con regadera y 
+                            acceso a internet. 
+
+                            Comida mexicana así como especialidades de mariscos, 
+                            en el restaurante abierto para desayuno, almuerzo y cena. 
+                            
+                            El hotel cuenta con una piscina exterior con un puente imitando rocas, 
+                            con toboganes y entrada tipo playa para los más pequeños. 
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 500 metros de la Zona Dorada.
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 7 kilómetros de la terminal de ferris.                               </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 2.60 kilómetros de la estación de autobuses.                                 </div>
+                            </li>
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El aeropuerto internacional de Mazatlán (MZT) está a 32 kilómetros.
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 14-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>DOUBLE TREE BY HILTON MAZATLAN</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            Hotel 4 estrellas con 281 habitaciones con aire acondicionado, minibar y televisión de plasma. 
+                            Las habitaciones disponen de balcón o patio. 
+
+                            La conexión a Internet wifi gratis te mantendrá en contacto con los tuyos; 
+                            también podrás ver tu programa favorito en el televisor con canales por cable. 
+                            El baño privado con ducha está provisto de cabezal de ducha tipo lluvia y 
+                            artículos de higiene personal gratuitos. Servicios de negocios y otros.
+
+                            Tendrás un centro de negocios, un servicio de recepción las 24 horas y atención 
+                            multilingüe a tu disposición. 
+
+                            Este hotel pone a tu disposición 2 salas de reuniones donde celebrar todo 
+                            tipo de eventos. Hay un aparcamiento con asistencia gratuito disponible. 
+                            La edad mínima para realizar el check-in es de 18 años.
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 6,1 km de Centro de Convenciones.
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 5,1 km de Acuario Mazatlán.                              </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 15 minutos en coche de Playa de Cerritos y Playa Norte. 
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- BackFeed 15-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>EL CID CASTILLA BEACH HOTEL</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            500 habitaciones con aire acondicionado, todas ellas con balcón privado 
+                            con vista al océano Pacífico o la piscina. 
+
+                            Las habitaciones están decoradas en un estilo moderno, con muebles de madera,
+                            ventilador de techo y motivos tropicales. 
+
+                            Ideal para familias, El Cid Castilla Hotel de Playa cuenta con un área de juego 
+                            para niños y piscina. 
+
+                            Los restaurantes y bares van desde un estilo sencillo para el almuerzo y el desayuno, 
+                            hasta la cocina más sofisticada para la cena. 
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Aeropuerto de Mazatlán está a 31 kilómetros.
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Acuario de Mazatlán se encuentra a 5 kilómetros y el centro a 7 kilómetros. 
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 16-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>EL CID MORO BEACH HOTEL </h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            243 habitaciones con vista al mar y con pisos de mármol. 
+
+                            Todas tienen baño privado con ducha, caja de seguridad y ofrecen internet inalámbrico. 
+                            El Cid El Moro Hotel de Playa dispone de una piscina con cascadas y un bar. 
+
+                            El restaurante con vista al mar ofrece comida internacional 
+                            y mariscos con música en vivo. Además ofrece actividades acuáticas como buceo, 
+                            snorkel, catamarán y kayak.
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 31 kilómetros del aeropuerto internacional de Mazatlán.
+                                </div>
+
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 17-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>EL CID GRANADA HOTEL</h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            120 habitaciones, todas amplias y bien equipadas, con aire acondicionado, 
+                            baño privado con regadera, cocineta equipada y televisión por cable/satélite. 
+                            
+                            El Cid Granada Hotel & Country Club cuenta con:
+                            <ul>
+                                <li>Un jardín en la entrada.</li>
+                                <li>Techo de palapa y una alberca.</li>
+                                <li>El Patio Restaurante y Bar.</li>
+                                <li>la Villa Italia. </li>
+                                <li>pizzería al aire libre. </li>
+                            </ul> 
+                            
+                            El Cid Granada Hotel & Country Club es también el escenario perfecto para la realización 
+                            de conferencias, ya que cuenta con salones con capacidad para hasta 900 personas, 
+                            en El Cid Country Club, ubicado a unos pasos del hotel. 
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 7 kilómetros el centro histórico de Mazatlán. 
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Aeropuerto de Mazatlán (MZT) está a 31 kilómetros.
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 18-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>EL CID MARINA BEACH HOTEL </h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="" target="_blank">La marina de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            204 suites con vistas a la marina, decoradas con telas azules y pisos, 
+                            paredes y techos blancos. Los balcones o terrazas incluyen una mesa y dos sillas. 
+                            
+                            Todas las suites tienen entre sus amenidades aire acondicionado, 
+                            teléfono de marcación directa, ventilador de techo y cocineta equipada. 
+                            
+                            El Cid Marina Hotel de Playa y Club de Yates cuenta con una playa privada accesible 
+                            únicamente por barco, la tina de hidromasaje más grande de Mazatlán y dos magníficas 
+                            albercas con grutas submarinas, un bar de alberca y una área para niños. 
+                            
+                            El hotel ofrece además de otros servicios, golfito, expediciones de pesca y varios 
+                            restaurantes y bares para beber y comer a gusto de todos.
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A 10 kilómetros de el centro histórico de la ciudad.
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    A sólo 10 minutos de la Zona Dorada.                                </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Aeropuerto de Mazatlán (MZT) está a 32 kilómetros.
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- BackFeed 19-->
+    <div class="BackFeed">
+            
+        <div class="in-flex" id="flex1">
+            <!-- Carousel -->
+            <ngb-carousel class="carouselChild carousel-dark">
+
+                <ng-template ngbSlide>
+                    <img class="img img-fluid" [src]="url" alt="">
+                </ng-template>  <ng-template ngbSlide>
+                                    <img class="img img-fluid" [src]="url" alt="">
+                                </ng-template>  <ng-template ngbSlide>
+                                                    <img class="img img-fluid" [src]="url" alt="">
+                                                </ng-template>
+            </ngb-carousel>
+        </div>
+            
+
+        <div class="in-flex">
+        
+            <!-- Descriptions -->
+            <div id="btn" class="content">
+                <h3>EMPORIO MAZATLAN </h3>
+                <ul style="padding-top: 2vw;">
+                
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="19" height="19" fill="black solid" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                        </svg>
+                        <div class="txt" style="color: black; font-weight: bold; font-size: 1.1rem; padding-bottom: 2vw;">Una semana = $3,000 MXN</div> 
+                    
+                    </li>
+
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <a style="margin-left: .33rem;" href="https://goo.gl/maps/5ophWcrepYstT2rx8" target="_blank">Zona Dorada de Mazatlán</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                            <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                          </svg>
+                        <div class="txt">
+                            133 habitaciones con hermosas vistas al océano o a los jardines, 
+                            así como con un gran número de amenidades.
+
+                            Decorado con un estilo contemporáneo, incluyen un sistema de regadera doble, 
+                            aire acondicionado, caja de seguridad electrónica y acceso a internet inalámbrico. 
+                            
+                            En el hotel Emporio Mazatlán podrás disfrutar de exquisitos platillos mexicanos 
+                            en el restaurante abierto para desayuno, comida y cena. 
+                            
+                            Frente al mar, el bar ofrece las mejores bebidas tropicales y música en vivo 
+                            los fines de semana de temporada alta. Los más pequeños podrán disfrutar del 
+                            club de niños (abierto por temporadas) mientras tú te relajas cerca de una de 
+                            las dos albercas o dentro del jacuzzi. 
+                            
+                            Toma una siesta en una de las hamacas frente 
+                            a la playa o ve el gimnasio para no perder la forma. 
+                        </div>
+
+                    </li>
+
+
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li>
+                        <button *ngIf="element == false" (click)="showData()">
+
+                            Ver areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+
+                        </button>
+
+                        <button *ngIf="element == true" (click)="hideData()">
+
+                            Ocultar areas cercanas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                            </svg>
+
+                        </button>
+                        
+
+                        <ul *ngIf="element == true">
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El centro de la ciudad se encuentra a 5 kilómetros.                             </div>
+                            </li>
+
+
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16">  
+                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                </svg>
+                                <div class="txt">
+                                    El Aeropuerto de Mazatlán (MZT) está a 26 kilómetros.
+                                </div>
+                            </li>
+
+                        </ul>    
+                    </li>                                        
+                </ul>       
+            </div>
+
+            <div class="BTN">
+                <a >Reservar vía WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
 
 
 </section>
