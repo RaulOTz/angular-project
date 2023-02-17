@@ -65,16 +65,22 @@
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                         </svg>
                         <div class="txt">
-                            Habitaciones equipadas con aire acondicionado, baño privado con ducha, 
-                            teléfono y televisión de pantalla plana con canales por cable. 
-                            <br>
-                            Asimismo, tiene amenidades como secador de pelo, caja fuerte y radio reloj despertador.
-                            <br> 
-                            El hotel posee piscina climatizada e internet inalámbrico.
-                            <br>
-                            Brida servicio de ama de llaves, estacionamiento y servicio de café las 24 horas. 
-                            <br>
-                            También cuenta con un restaurante ofrece desayuno continental en cortesía y un bar lounge (con cargo adicional). 
+                          
+                            <input type="checkbox" class="ver-mas-state" id="post-description-1" />
+                           
+                            <p class="ver-mas-wrap">
+                                Habitaciones equipadas con aire acondicionado, baño privado con ducha, 
+                                teléfono y televisión de pantalla plana con canales por cable.
+                                <span class="ver-mas-target"> 
+                                    Asimismo, tiene amenidades como secador de pelo, caja fuerte y radio reloj despertador.                                   
+                                    El hotel posee piscina climatizada e internet inalámbrico.                           
+                                    Brida servicio de ama de llaves, estacionamiento y servicio de café las 24 horas.                                    
+                                    También cuenta con un restaurante ofrece desayuno continental en cortesía y un bar lounge (con cargo adicional).
+                                </span>
+
+                            </p>
+                            <label for="post-description-1" class="ver-mas-trigger"></label>
+
                         </div>
 
                     </li>
@@ -82,58 +88,49 @@
 
                     <!--  Section "Ver areas cercanas"  -->
                     <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                        <div>                          
+                            <input type="checkbox" class="read-more-state" id="post-NearLocation-1" />
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
+                            <p class="read-more-wrap"><span class="read-more-target"> 
+                                
+                                <ul>
 
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                                    <li>
+                                        <svg width="16" height="16" viewBox="0 0 16 16">  
+                                            <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                        </svg>
+                                        <div class="txt">
+                                            A 850 metros del hotel está la playa pública Camarón Sábalo.
+                                        </div>
+            
+                                    </li>
+        
+        
+                                    <li>
+                                        <svg width="16" height="16" viewBox="0 0 16 16">  
+                                            <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                        </svg>
+                                        <div class="txt">
+                                            A 5 kilómetros se encuentra el Acuario Mazatlán, que exhibe a diferentes especies marinas del pacífico. 
+                                        </div>
+                                    </li>
+        
+        
+                                    <li>
+                                        <svg width="16" height="16" viewBox="0 0 16 16">  
+                                            <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
+                                        </svg>
+                                        <div class="txt">
+                                            El Aeropuerto Internacional de Mazatlán (MZT) está a 27 kilómetros.
+                                        </div>
+                                    </li>
+        
+                                </ul>  
+                            </span></p>
+                             
+                            <label for="post-NearLocation-1" class="read-more-trigger"></label>      
                         
-
-                        <ul *ngIf="element == true">
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 850 metros del hotel está la playa pública Camarón Sábalo.
-                                </div>
-    
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 5 kilómetros se encuentra el Acuario Mazatlán, que exhibe a diferentes especies marinas del pacífico. 
-                                </div>
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Aeropuerto Internacional de Mazatlán (MZT) está a 27 kilómetros.
-                                </div>
-                            </li>
-
-                        </ul>    
+                        </div>
                     </li>                                        
                 </ul>       
             </div>
