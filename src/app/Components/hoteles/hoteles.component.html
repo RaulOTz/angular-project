@@ -96,7 +96,7 @@
                                 <ul>
 
                                     <li>
-                                        A 850 metros del hotel está la playa pública Camarón Sábalo.
+                                        A 850 metros del hotel está la playa pública Camarón Sábalo. 
                                         
             
                                     </li>
@@ -449,88 +449,74 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
+
                         <div class="txt">
-                            72 espaciosas habitaciones y suites con vistas a la ciudad y al océano. 
+
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionFor" />
+                           
+                            <p class="ver-mas-wrap">
+                                72 espaciosas habitaciones y suites con vistas a la ciudad y al océano. 
                             Todas incluyen entre sus amenidades aire acondicionado, televisión por cable, 
-                            baño privado con regadera y caja de seguridad. El hotel tiene un restaurante que 
-                            sirve desayuno bufet y un bar en el undécimo piso junto a la piscina. 
-                            El hotel también cuenta con una sala de juegos, máquinas de hielo, estacionamiento, 
-                            salas de reuniones y personal multilingüe entre otros servicios.
+                            baño privado con regadera y caja de seguridad.
+
+                                <span class="ver-mas-target"> 
+                                    El hotel tiene un restaurante que 
+                                    sirve desayuno bufet y un bar en el undécimo piso junto a la piscina. 
+                                    El hotel también cuenta con una sala de juegos, máquinas de hielo, estacionamiento, 
+                                    salas de reuniones y personal multilingüe entre otros servicios.
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionFor" class="ver-mas-trigger"></label>
+                            
+                             
+                        </div>
+                        <div class="txt">
+                            
                         </div>
 
                     </li>
 
+                    <!--  Section "Ver areas cercanas"  -->
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
-
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
+                    
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationFor" />
                         
-
-                        <ul *ngIf="element == true">
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    Edificios históricos del siglo XIX y XX.                                 </div>
-
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    Plaza Machado                              </div>
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    La Catedral 
-                                </div>
-                            </li>
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    Teatro Ángela Peralta.
-                                </div>
-                            </li>
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El aeropuerto de Mazatlán (MZT) está a 15 kilómetros                                 </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                            
+                        
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        Edificios históricos del siglo XIX y XX.  
+                                    </li>
+                                    <li>
+                                        Plaza Machado.    
+                                    </li>
+                                    <li>
+                                        La Catedral.
+                                    </li>
+                                    <li>
+                                        Teatro Ángela Peralta.
+                                    </li>
+                                    <li>
+                                        El aeropuerto de Mazatlán (MZT) está a 15 kilómetros.   
+                                    </li>
+                                
+                                </ul>
+                            
+                        
+                                </span>
+                            </p>
+                        
+                            <label for="post-NearLocationFor" class="read-more-trigger"></label>
+                    
+                        </div>
+                    
+                    </li>
+                                  
                 </ul>       
             </div>
 
@@ -588,74 +574,71 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
+
                         <div class="txt">
-                            50 habitaciones y suites, todas cómodas y espaciosas. 
-                            Todas cuentan entre sus amenidades con aire acondicionado, 
-                            televisión por cable/satélite, baño privado con regadera y 
-                            acceso a internet inalámbrico. <br>
-                            Hay habitaciones libres de humo disponibles. <br>
-                            Restaurante y un bar que sirven comida internacional así como tu cóctel favorito. <br>
-                            El hotel también cuenta con una alberca, centro de negocios, 
-                            sala de reuniones para grupos pequeños, estacionamiento y personal 
-                            multilingüe entre otros servicios.
+
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionFive" />
+                           
+                            <p class="ver-mas-wrap">
+                                50 habitaciones y suites, todas cómodas y espaciosas. 
+                                Todas cuentan entre sus amenidades con aire acondicionado, 
+                                televisión por cable/satélite, baño privado con regadera y 
+                                acceso a internet inalámbrico. 
+                    
+                                <span class="ver-mas-target"> 
+                                    Hay habitaciones libres de humo disponibles. 
+                                    Restaurante y un bar que sirven comida internacional así como tu cóctel favorito.
+                                    El hotel también cuenta con una alberca, centro de negocios, 
+                                    sala de reuniones para grupos pequeños, estacionamiento y personal 
+                                    multilingüe entre otros servicios.
+                    
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionFive" class="ver-mas-trigger"></label>
+                            
+                             
+                        </div>
+                    
+                        <div class="txt">
+                            
+                           
                         </div>
 
                     </li>
 
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                    <!--  Section "Ver areas cercanas"  -->
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
+                    
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationFive" />
                         
+                            
+                        
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        Islas del Océano Pacífico.     
+                                    </li>
+                                    <li>
+                                        Playa
+                                    </li>
+                                    <li>
+                                        El aeropuerto de Mazatlán (MZT) está a 30 kilómetros
+                                    </li>
+                                    
+                                </ul>
+                            
+                                </span>
+                            </p>
+                        
+                            <label for="post-NearLocationFive" class="read-more-trigger"></label>
 
-                        <ul *ngIf="element == true">
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    Islas del Océano Pacífico.                                 </div>
-
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    Playa                              </div>
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El aeropuerto de Mazatlán (MZT) está a 30 kilómetros
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                        </div>              
+                    </li>                              
                 </ul>       
             </div>
 
@@ -723,68 +706,41 @@
 
                     </li>
 
+                        <!--  Section "Ver areas cercanas"  -->
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
-
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
                         
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationSix" />
 
-                        <ul *ngIf="element == true">
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        A 2 cuadras de la propiedad se encuentra la playa.  
+                                    </li>
+                                    <li>
+                                        A menos de 1 kilómetro está el monumento a la familia.
+                                    </li>
+                                    <li>
+                                        A 3 kilómetros se halla el bosque de la ciudad y el acuario de Mazatlán. 
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 2 cuadras de la propiedad se encuentra la playa.             </div>
-                            </li>
+                                    </li>
+                                    <li>
+                                        El Aeropuerto Internacional de Mazatlán (MZT) se sitúa a 24 kilómetros de distancia.
 
+                                    </li>
+                                
+                                </ul>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A menos de 1 kilómetro está el monumento a la familia.
-                                </div>
-                            </li>
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 3 kilómetros se halla el bosque de la ciudad y el acuario de Mazatlán. 
-                                </div>
-                            </li>
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Aeropuerto Internacional de Mazatlán (MZT) se sitúa a 24 kilómetros de distancia.
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                            </span></p>
+                        
+                            <label for="post-NearLocationSix" class="read-more-trigger"></label>
+                        
+                        </div>
+                        
+                    </li>
+                                    
                 </ul>       
             </div>
 
@@ -843,82 +799,65 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
+
                         <div class="txt">
-                            Hotel 4 estrellas, 8 habitaciones con televisión de pantalla plana. 
-                            La conexión a Internet wifi gratis te mantendrá en contacto con los tuyos; 
-                            también podrás ver tu programa favorito en el televisor con canales por cable. 
-                            El cuarto de baño está provisto de ducha y artículos de higiene personal de diseño. 
-                            Entre las comodidades, se incluyen caja fuerte, escritorio y teléfono con y llamadas locales gratuitas. 
-                            Servicios de negocios y otros, tendrás tintorería o lavandería, un servicio de recepción las 24 horas y 
-                            atención multilingüe a tu disposición.
+
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionSeven" />
+                           
+                            <p class="ver-mas-wrap">
+                                Hotel 4 estrellas, 8 habitaciones con televisión de pantalla plana. 
+                                La conexión a Internet wifi gratis te mantendrá en contacto con los tuyos; 
+                                también podrás ver tu programa favorito en el televisor con canales por cable. 
+                    
+                                <span class="ver-mas-target"> 
+                                El cuarto de baño está provisto de ducha y artículos de higiene personal de diseño. 
+                                Entre las comodidades, se incluyen caja fuerte, escritorio y teléfono con y llamadas locales gratuitas. 
+                                Servicios de negocios y otros, tendrás tintorería o lavandería, un servicio de recepción las 24 horas y 
+                                atención multilingüe a tu disposición.
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionSeven" class="ver-mas-trigger"></label>
+         
                         </div>
 
                     </li>
 
+                        <!--  Section "Ver areas cercanas"  -->
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
+                        <div> 
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationSeven" />
 
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                            <p class="read-more-wrap"><span class="read-more-target">
+                            
+                                <ul>
+                                    <li>
+                                        A 1,8 km de El Faro. 
+                                    </li>
+    
+                                    <li>
+                                        A 2,1 km de Playa Norte.    
+                                    </li>
+    
+                                    <li>
+                                        A 8 min a pie de Plaza Machado. 
+                                    </li>
+                                    
+                                    <li>
+                                        A unos pasos de Playa Olas Altas. 
+                                    </li>
+                                    
+                                </ul>
+                            
+                                </span>
+                            </p>     
+                            <label for="post-NearLocationSeven" class="read-more-trigger"></label>
+                        </div>
                         
-
-                        <ul *ngIf="element == true">
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 1,8 km de El Faro. 
-                                </div>
-
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 2,1 km de Playa Norte.                              </div>
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 8 min a pie de Plaza Machado. 
-                                </div>
-                            </li>
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A unos pasos de Playa Olas Altas. 
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                    </li>
+                                  
                 </ul>       
             </div>
 
@@ -987,60 +926,34 @@
                     </li>
 
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                        <!--  Section "Ver areas cercanas"  -->
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
+                    <li style="list-style: none; padding-top: 2.5rem;">
+                        <div>                  
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationEight" />
+                            
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        A 2 kilómetros de las instalaciones está el Museo Arqueológico de Mazatlán.
+                                    </li>
+                                    <li>
+                                        A 4 kilómetros se encuentra el Acuario Mazatlán. 
+                                    </li>
+                                    <li>
+                                        El Aeropuerto Internacional General Rafael Buelna (MZT) está a 29 kilómetros.
+                                    </li>
+                                
+                                </ul>
 
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                            </span></p>
+                            
+                            <label for="post-NearLocationEight" class="read-more-trigger"></label>
                         
-
-                        <ul *ngIf="element == true">
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 2 kilómetros de las instalaciones está el Museo Arqueológico de Mazatlán.
-                                </div>
-
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 4 kilómetros se encuentra el Acuario Mazatlán.             </div>
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Aeropuerto Internacional General Rafael Buelna (MZT) está a 29 kilómetros.  </div>
-                            </li>
-
-
-                        </ul>    
-                    </li>                                        
+                        </div>
+                        
+                    </li>                    
+                                       
                 </ul>       
             </div>
 
@@ -1099,84 +1012,78 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
+
                         <div class="txt">
-                            110 habitaciones equipadas con aire acondicionado, teléfono digital, 
-                            internet de alta velocidad, televisión por cable, radio reloj despertador 
-                            y para tu tranquilidad, sistema contra incendios. 
 
-                            Restaurante que sirve desayuno continental estilo bufet cada mañana, 
-                            un gimnasio y una piscina al aire libre. 
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionNine" />
+                           
+                            <p class="ver-mas-wrap">
+                                110 habitaciones equipadas con aire acondicionado, teléfono digital, 
+                                internet de alta velocidad, televisión por cable, radio reloj despertador 
+                                y para tu tranquilidad, sistema contra incendios.
+                    
+                                <span class="ver-mas-target"> 
+                                    Restaurante que sirve desayuno continental estilo bufet cada mañana, 
+                                    un gimnasio y una piscina al aire libre. 
+                                    Para viajeros de negocios, el hotel cuenta con una sala de juntas, 
+                                    centro de negocios e internet inalámbrico en todas las áreas.
+                    
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionNine" class="ver-mas-trigger"></label>
+                            
+                             
+                        </div>
+                    
+                        <div class="txt">
+                            
 
-                            Para viajeros de negocios, el hotel cuenta con una sala de juntas, 
-                            centro de negocios e internet inalámbrico en todas las áreas.
+                            
                         </div>
 
                     </li>
 
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
 
-                        </button>
 
-                        <button *ngIf="element == true" (click)="hideData()">
+                     <!--  Section "Ver areas cercanas"  -->
 
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                        </button>
+                        <div> 
                         
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationNine" />
 
-                        <ul *ngIf="element == true">
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        A 10 minutos del centro de la ciudad de Mazatlán.
+                                    </li>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 10 minutos del centro de la ciudad de Mazatlán.
-                                </div>
+                                    <li>
+                                        A 1 kilómetro del malecón. 
+                                    </li>
 
-                            </li>
+                                    <li>
+                                        El Aeropuerto de Mazatlán (MZT) está a 25 kilómetros.
+                                    </li>
+                                        
+                                    <li>
+                                        A 5 minutos de la estación central de autobuses. 
+                                    </li>
 
+                                </ul>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 1 kilómetro del malecón.                              </div>
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Aeropuerto de Mazatlán (MZT) está a 25 kilómetros.
-                                </div>
-                            </li>
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 5 minutos de la estación central de autobuses. 
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                            </span></p>
+                            
+                            <label for="post-NearLocationNine" class="read-more-trigger"></label>
+                        
+                        </div>
+                        
+                    </li>
+                               
                 </ul>       
             </div>
 
@@ -1235,84 +1142,68 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
+
                         <div class="txt">
-                            Piscina, gimnasio, restaurante, servicios de lavandería y transportación gratuita 
-                            en el área local (aplican restricciones). 
 
-                            Ideal para aquellos que viajan por trabajo, el alojamiento cuenta con centro 
-                            de negocios, wifi en todas sus áreas y salones de eventos. 
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionTen" />
+                           
+                            <p class="ver-mas-wrap">
+                                Piscina, gimnasio, restaurante, servicios de lavandería y transportación gratuita 
+                                en el área local (aplican restricciones).
+                    
+                                <span class="ver-mas-target"> 
+                                    Ideal para aquellos que viajan por trabajo, el alojamiento cuenta con centro 
+                                    de negocios, wifi en todas sus áreas y salones de eventos. 
 
-                            Las habitaciones están equipadas con aire acondicionado, baño privado con ducha, 
-                            teléfono, televisión con canales por cable, mesa de trabajo, cafetera, 
-                            radio despertador, conexiones USB y caja de seguridad.
-                        </div>
+                                    Las habitaciones están equipadas con aire acondicionado, baño privado con ducha, 
+                                    teléfono, televisión con canales por cable, mesa de trabajo, cafetera, 
+                                    radio despertador, conexiones USB y caja de seguridad.
+                    
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionTen" class="ver-mas-trigger"></label>
+
+                        </div>                                     
 
                     </li>
 
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                    <!--  Section "Ver areas cercanas"  -->
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
                         
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationTen" />
+        
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        A 1 kilómetro de la Marina Mazatlán.
 
-                        <ul *ngIf="element == true">
+                                    </li>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 1 kilómetro de la Marina Mazatlán.
-                                </div>
+                                    <li>
+                                        A 2 kilómetros de Playa Cerritos. 
+                                    </li>
 
-                            </li>
+                                    <li>
+                                        A 8 kilómetros del Acuario de Mazatlán y jardín botanico.
+                                    </li>
+                                    
+                                    <li>
+                                        El Aeropuerto Internacional General Rafael Buelna (MZT) se localiza a 33 kilómetros.
+                                    </li>
 
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 2 kilómetros de Playa Cerritos.                             </div>
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 8 kilómetros del Acuario de Mazatlán y jardín botanico.
-                                </div>
-                            </li>
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Aeropuerto Internacional General Rafael Buelna (MZT) se localiza a 33 kilómetros.
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                                </ul>
+                            
+                        
+                            </span></p>
+                        
+                            <label for="post-NearLocationTen" class="read-more-trigger"></label>
+                        </div> 
+                    </li>                   
                 </ul>       
             </div>
 
@@ -1371,79 +1262,67 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
+
                         <div class="txt">
-                            82 habitaciones y suites. Todas cuentan con aire acondicionado, 
-                            baño privado con ducha, televisión con pantalla plana y máquina para hacer té o café. 
 
-                            Las suites cuentan además con una terraza privada y jacuzzi exterior. 
-
-                            La propiedad ofrece un restaurante y un bar, así como una piscina panorámica 
-                            y un gimnasio totalmente equipado. 
-
-                            El hotel también cuenta con un centro de negocios, 
-                            salas de reuniones para grupos pequeños, servicio de niñera, acceso a 
-                            internet inalámbrico y estacionamiento. Para tu comodidad, 
-                            hay un túnel de acceso a la playa equipado con ducha, rampa de acceso, iluminación 
-                            y seguridad.
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionEleven" />
+                           
+                            <p class="ver-mas-wrap">
+                                82 habitaciones y suites. Todas cuentan con aire acondicionado, 
+                                baño privado con ducha, televisión con pantalla plana y máquina para hacer té o café. 
+                                Las suites cuentan además con una terraza privada y jacuzzi exterior. 
+                    
+                                <span class="ver-mas-target"> 
+                                    La propiedad ofrece un restaurante y un bar, así como una piscina panorámica 
+                                    y un gimnasio totalmente equipado. 
+                                    El hotel también cuenta con un centro de negocios, 
+                                    salas de reuniones para grupos pequeños, servicio de niñera, acceso a 
+                                    internet inalámbrico y estacionamiento. Para tu comodidad, 
+                                    hay un túnel de acceso a la playa equipado con ducha, rampa de acceso, iluminación 
+                                    y seguridad.
+                    
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionEleven" class="ver-mas-trigger"></label>
+  
                         </div>
 
                     </li>
 
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
+                    <!--  Section "Ver areas cercanas"  -->
 
-                        </button>
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
                         
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationEleven" />
 
-                        <ul *ngIf="element == true">
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        A 1 kilómetro del Acuario.
+                                    </li>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 1 kilómetro del Acuario.
-                                </div>
+                                    <li>
+                                        A 3 kilómetros de la Zona Dorada.
+                                    </li>
 
-                            </li>
+                                    <li>
+                                        El aeropuerto de Mazatlán (MZT) está a 35 kilómetros de distancia. 
+                                    </li>
 
+                                </ul>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 3 kilómetros de la Zona Dorada.                               </div>
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El aeropuerto de Mazatlán (MZT) está a 35 kilómetros de distancia. 
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                                </span>
+                            </p>
+                        
+                        <label for="post-NearLocationEleven" class="read-more-trigger"></label>
+                        
+                        </div>                  
+                    </li>                                      
                 </ul>       
             </div>
 
@@ -1502,71 +1381,67 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
+
                         <div class="txt">
-                            230 cómodas habitaciones y suites, decoradas al estilo mexicano. 
-                            Todas incluyen aire acondicionado, baño privado con ducha, 
-                            televisión por cable/satélite y mesa con sillas.
 
-                            Las suites de un dormitorio cuentan además con una cocineta completamente equipada. 
-                            Internet inalámbrico está disponible en las habitaciones. 
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionTwelve" />
+                           
+                            <p class="ver-mas-wrap">
+                                230 cómodas habitaciones y suites, decoradas al estilo mexicano. 
+                                Todas incluyen aire acondicionado, baño privado con ducha, 
+                                televisión por cable/satélite y mesa con sillas.
+                    
+                                <span class="ver-mas-target"> 
+                                    Las suites de un dormitorio cuentan además con una cocineta completamente equipada. 
+                                    Internet inalámbrico está disponible en las habitaciones. 
 
-                            Costa de Oro Beach Hotel tiene una piscina temática tipo playa con un área especial 
-                            para los niños más pequeños. 
+                                    Costa de Oro Beach Hotel tiene una piscina temática tipo playa con un área especial 
+                                    para los niños más pequeños. 
 
-                            Los adultos pueden disfrutar del jacuzzi o pasear por la playa. 
-                            El hotel también cuenta con un restaurante, un bar y una cafetería. 
-                            Otros servicios igualmente disponibles son canchas de tenis, acceso a internet 
-                            inalámbrico en áreas públicas, cajas de seguridad, minisúper y estacionamiento.
-                        </div>
+                                    Los adultos pueden disfrutar del jacuzzi o pasear por la playa. 
+                                    El hotel también cuenta con un restaurante, un bar y una cafetería. 
+                                    Otros servicios igualmente disponibles son canchas de tenis, acceso a internet 
+                                    inalámbrico en áreas públicas, cajas de seguridad, minisúper y estacionamiento.
+                    
+                                </span>
+
+                            </p>
+                            <label for="post-descriptionTwelve" class="ver-mas-trigger"></label>
+                            
+                        </div>                
 
                     </li>
 
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                       <!--  Section "Ver areas cercanas"  -->
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
                         
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationTwelve" />
+                        
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        El Acuario está a 3.7 km y el centro de Mazatlán. 
 
-                        <ul *ngIf="element == true">
+                                    </li>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Acuario está a 3.7 km y el centro de Mazatlán. 
-                                </div>
+                                    <li>
+                                        El Aeropuerto de Mazatlán (MZT) está a 30 kilómetros.
 
-                            </li>
+                                    </li>
 
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Aeropuerto de Mazatlán (MZT) está a 30 kilómetros.
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                                </ul>
+                            
+                        
+                            </span></p>
+                        
+                            <label for="post-NearLocationTwelve" class="read-more-trigger"></label>
+                        
+                        </div> 
+                    </li>                      
                 </ul>       
             </div>
 
@@ -1625,85 +1500,68 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
-                        <div class="txt">
-                            162 habitaciones y suites decoradas en tonos suaves y 
-                            equipados con todo lo necesario para una estancia relajante. 
 
-                            Las amenidades incluyen aire acondicionado, baño privado con regadera y 
-                            acceso a internet. 
+                          <div class="txt">
 
-                            Comida mexicana así como especialidades de mariscos, 
-                            en el restaurante abierto para desayuno, almuerzo y cena. 
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionThirteen" />
+                           
+                            <p class="ver-mas-wrap">
+                                162 habitaciones y suites decoradas en tonos suaves y 
+                                equipados con todo lo necesario para una estancia relajante. 
+
+                                Las amenidades incluyen aire acondicionado, baño privado con regadera y 
+                                acceso a internet. 
+                    
+                                <span class="ver-mas-target">                               
+                                    Comida mexicana así como especialidades de mariscos, 
+                                    en el restaurante abierto para desayuno, almuerzo y cena. 
+                                    
+                                    El hotel cuenta con una piscina exterior con un puente imitando rocas, 
+                                    con toboganes y entrada tipo playa para los más pequeños. 
+                    
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionThirteen" class="ver-mas-trigger"></label>
                             
-                            El hotel cuenta con una piscina exterior con un puente imitando rocas, 
-                            con toboganes y entrada tipo playa para los más pequeños. 
+                             
+                        </div>
+                    
+                        <div class="txt">
+                           
+
                         </div>
 
                     </li>
+      
+                    <!--  Section "Ver areas cercanas"  -->
 
+                    <li style="list-style: none; padding-top: 2.5rem;">
+                        <div>  
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationThirteen" />
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        A 500 metros de la Zona Dorada.
+                                    </li>
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
+                                    <li>
+                                        A 7 kilómetros de la terminal de ferris.    
+                                    </li>
 
-                        </button>
+                                    <li>
+                                        A 2.60 kilómetros de la estación de autobuses.
+                                    </li>
+                                    
+                                </ul>
 
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
-                        
-
-                        <ul *ngIf="element == true">
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 500 metros de la Zona Dorada.
-                                </div>
-
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 7 kilómetros de la terminal de ferris.                               </div>
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 2.60 kilómetros de la estación de autobuses.                                 </div>
-                            </li>
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El aeropuerto internacional de Mazatlán (MZT) está a 32 kilómetros.
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                                </span>
+                            </p>
+                            
+                            <label for="post-NearLocationThirteen" class="read-more-trigger"></label>
+                        </div>              
+                    </li>                               
                 </ul>       
             </div>
 
@@ -1762,80 +1620,69 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
-                        <div class="txt">
-                            Hotel 4 estrellas con 281 habitaciones con aire acondicionado, minibar y televisión de plasma. 
-                            Las habitaciones disponen de balcón o patio. 
 
-                            La conexión a Internet wifi gratis te mantendrá en contacto con los tuyos; 
-                            también podrás ver tu programa favorito en el televisor con canales por cable. 
-                            El baño privado con ducha está provisto de cabezal de ducha tipo lluvia y 
-                            artículos de higiene personal gratuitos. Servicios de negocios y otros.
+                          <div class="txt">
 
-                            Tendrás un centro de negocios, un servicio de recepción las 24 horas y atención 
-                            multilingüe a tu disposición. 
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionFourteen" />
+                           
+                            <p class="ver-mas-wrap">
+                                Hotel 4 estrellas con 281 habitaciones con aire acondicionado, minibar y televisión de plasma. 
+                                Las habitaciones disponen de balcón o patio. 
+                    
+                                <span class="ver-mas-target"> 
+                                    La conexión a Internet wifi gratis te mantendrá en contacto con los tuyos; 
+                                    también podrás ver tu programa favorito en el televisor con canales por cable. 
+                                    El baño privado con ducha está provisto de cabezal de ducha tipo lluvia y 
+                                    artículos de higiene personal gratuitos. Servicios de negocios y otros.
 
-                            Este hotel pone a tu disposición 2 salas de reuniones donde celebrar todo 
-                            tipo de eventos. Hay un aparcamiento con asistencia gratuito disponible. 
-                            La edad mínima para realizar el check-in es de 18 años.
+                                    Tendrás un centro de negocios, un servicio de recepción las 24 horas y atención 
+                                    multilingüe a tu disposición. 
+
+                                    Este hotel pone a tu disposición 2 salas de reuniones donde celebrar todo 
+                                    tipo de eventos. Hay un aparcamiento con asistencia gratuito disponible. 
+                                    La edad mínima para realizar el check-in es de 18 años.
+                    
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionFourteen" class="ver-mas-trigger"></label>          
+                             
                         </div>
 
                     </li>
 
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
-
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
                         
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationFourteen" />
 
-                        <ul *ngIf="element == true">
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        A 6,1 km de Centro de Convenciones.
+                                    </li>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 6,1 km de Centro de Convenciones.
-                                </div>
+                                    <li>
+                                        A 5,1 km de Acuario Mazatlán.    
+                                    </li>
 
-                            </li>
+                                    <li>
+                                        A 15 minutos en coche de Playa de Cerritos y Playa Norte. 
+                                    </li>
+                                    
+                                </ul>
 
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 5,1 km de Acuario Mazatlán.                              </div>
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 15 minutos en coche de Playa de Cerritos y Playa Norte. 
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                                </span>
+                            </p>
+                        
+                            <label for="post-NearLocationFourteen" class="read-more-trigger"></label>
+                        
+                        </div>
+                        
+                    </li>                
                 </ul>       
             </div>
 
@@ -1893,68 +1740,61 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
+
                         <div class="txt">
-                            500 habitaciones con aire acondicionado, todas ellas con balcón privado 
-                            con vista al océano Pacífico o la piscina. 
 
-                            Las habitaciones están decoradas en un estilo moderno, con muebles de madera,
-                            ventilador de techo y motivos tropicales. 
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionFifteen" />
+                           
+                            <p class="ver-mas-wrap">
+                                500 habitaciones con aire acondicionado, todas ellas con balcón privado 
+                                con vista al océano Pacífico o la piscina. 
+                    
+                                <span class="ver-mas-target"> 
+                                    Las habitaciones están decoradas en un estilo moderno, con muebles de madera,
+                                    ventilador de techo y motivos tropicales. 
 
-                            Ideal para familias, El Cid Castilla Hotel de Playa cuenta con un área de juego 
-                            para niños y piscina. 
+                                    Ideal para familias, El Cid Castilla Hotel de Playa cuenta con un área de juego 
+                                    para niños y piscina. 
 
-                            Los restaurantes y bares van desde un estilo sencillo para el almuerzo y el desayuno, 
-                            hasta la cocina más sofisticada para la cena. 
+                                    Los restaurantes y bares van desde un estilo sencillo para el almuerzo y el desayuno, 
+                                    hasta la cocina más sofisticada para la cena.
+                    
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionFifteen" class="ver-mas-trigger"></label>
+                            
                         </div>
 
                     </li>
+    
 
+                    <!--  Section "Ver areas cercanas"  -->
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
-
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
                         
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationFifteen" />
 
-                        <ul *ngIf="element == true">
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        El Aeropuerto de Mazatlán está a 31 kilómetros.
+                                    </li>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Aeropuerto de Mazatlán está a 31 kilómetros.
-                                </div>
+                                    <li>
+                                        El Acuario de Mazatlán se encuentra a 5 kilómetros y el centro a 7 kilómetros. 
+                                    </li>
 
-                            </li>
+                                </ul>
 
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Acuario de Mazatlán se encuentra a 5 kilómetros y el centro a 7 kilómetros. 
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                                </span>
+                            </p>
+                        
+                            <label for="post-NearLocationFifteen" class="read-more-trigger"></label>
+                        </div> 
+                    </li>
                 </ul>       
             </div>
 
@@ -2013,55 +1853,53 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
+
                         <div class="txt">
-                            243 habitaciones con vista al mar y con pisos de mármol. 
 
-                            Todas tienen baño privado con ducha, caja de seguridad y ofrecen internet inalámbrico. 
-                            El Cid El Moro Hotel de Playa dispone de una piscina con cascadas y un bar. 
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionSixteen" />
+                           
+                            <p class="ver-mas-wrap">
+                                243 habitaciones con vista al mar y con pisos de mármol. 
 
-                            El restaurante con vista al mar ofrece comida internacional 
-                            y mariscos con música en vivo. Además ofrece actividades acuáticas como buceo, 
-                            snorkel, catamarán y kayak.
+                                Todas tienen baño privado con ducha, caja de seguridad y ofrecen internet inalámbrico. 
+                                El Cid El Moro Hotel de Playa dispone de una piscina con cascadas y un bar. 
+                    
+                                <span class="ver-mas-target"> 
+                                    El restaurante con vista al mar ofrece comida internacional 
+                                    y mariscos con música en vivo. Además ofrece actividades acuáticas como buceo, 
+                                    snorkel, catamarán y kayak.
+                    
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionSixteen" class="ver-mas-trigger"></label>
+
                         </div>
-
+                    
                     </li>
 
+                    <!--  Section "Ver areas cercanas"  -->
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
-
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
                         
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationSixteen" />
 
-                        <ul *ngIf="element == true">
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        A 31 kilómetros del aeropuerto internacional de Mazatlán.
+                                    </li>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 31 kilómetros del aeropuerto internacional de Mazatlán.
-                                </div>
+                                </ul>
 
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                                </span>
+                            </p>
+                        
+                            <label for="post-NearLocationSixteen" class="read-more-trigger"></label>
+                        </div>                    
+                    </li>                                      
                 </ul>       
             </div>
 
@@ -2120,72 +1958,67 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
+
                         <div class="txt">
-                            120 habitaciones, todas amplias y bien equipadas, con aire acondicionado, 
-                            baño privado con regadera, cocineta equipada y televisión por cable/satélite. 
+
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionSeventeen" />
+                           
+                            <p class="ver-mas-wrap">
+                                120 habitaciones, todas amplias y bien equipadas, con aire acondicionado, 
+                                baño privado con regadera, cocineta equipada y televisión por cable/satélite. 
+                    
+                                <span class="ver-mas-target"> 
+                                    El Cid Granada Hotel & Country Club cuenta con:
+                                    <ul>
+                                        <li>Un jardín en la entrada.</li>
+                                        <li>Techo de palapa y una alberca.</li>
+                                        <li>El Patio Restaurante y Bar.</li>
+                                        <li>la Villa Italia. </li>
+                                        <li>pizzería al aire libre. </li>
+                                    </ul> 
+                                    
+                                    El Cid Granada Hotel & Country Club es también el escenario perfecto para la realización 
+                                    de conferencias, ya que cuenta con salones con capacidad para hasta 900 personas, 
+                                    en El Cid Country Club, ubicado a unos pasos del hotel. 
+                    
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionSeventeen" class="ver-mas-trigger"></label>
                             
-                            El Cid Granada Hotel & Country Club cuenta con:
-                            <ul>
-                                <li>Un jardín en la entrada.</li>
-                                <li>Techo de palapa y una alberca.</li>
-                                <li>El Patio Restaurante y Bar.</li>
-                                <li>la Villa Italia. </li>
-                                <li>pizzería al aire libre. </li>
-                            </ul> 
-                            
-                            El Cid Granada Hotel & Country Club es también el escenario perfecto para la realización 
-                            de conferencias, ya que cuenta con salones con capacidad para hasta 900 personas, 
-                            en El Cid Country Club, ubicado a unos pasos del hotel. 
+                             
                         </div>
 
                     </li>
 
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
-
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
-
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
                         
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationSeventeen" />
 
-                        <ul *ngIf="element == true">
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        A 7 kilómetros el centro histórico de Mazatlán. 
+                                    </li>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 7 kilómetros el centro histórico de Mazatlán. 
-                                </div>
+                                    <li>
+                                        El Aeropuerto de Mazatlán (MZT) está a 31 kilómetros.
+                                    </li>
 
-                            </li>
+                                </ul>
 
+                                </span>
+                            </p>
+                        
+                            <label for="post-NearLocationSeventeen" class="read-more-trigger"></label>
+                        
+                        </div>
+                        
+                    </li>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Aeropuerto de Mazatlán (MZT) está a 31 kilómetros.
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
                 </ul>       
             </div>
 
@@ -2244,78 +2077,68 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
+
                         <div class="txt">
-                            204 suites con vistas a la marina, decoradas con telas azules y pisos, 
-                            paredes y techos blancos. Los balcones o terrazas incluyen una mesa y dos sillas. 
-                            
-                            Todas las suites tienen entre sus amenidades aire acondicionado, 
-                            teléfono de marcación directa, ventilador de techo y cocineta equipada. 
-                            
-                            El Cid Marina Hotel de Playa y Club de Yates cuenta con una playa privada accesible 
-                            únicamente por barco, la tina de hidromasaje más grande de Mazatlán y dos magníficas 
-                            albercas con grutas submarinas, un bar de alberca y una área para niños. 
-                            
-                            El hotel ofrece además de otros servicios, golfito, expediciones de pesca y varios 
-                            restaurantes y bares para beber y comer a gusto de todos.
+
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionEighteen" />
+                           
+                            <p class="ver-mas-wrap">
+                                204 suites con vistas a la marina, decoradas con telas azules y pisos, 
+                                paredes y techos blancos. Los balcones o terrazas incluyen una mesa y dos sillas. 
+                    
+                                <span class="ver-mas-target"> 
+                                    Todas las suites tienen entre sus amenidades aire acondicionado, 
+                                    teléfono de marcación directa, ventilador de techo y cocineta equipada. 
+                                    
+                                    El Cid Marina Hotel de Playa y Club de Yates cuenta con una playa privada accesible 
+                                    únicamente por barco, la tina de hidromasaje más grande de Mazatlán y dos magníficas 
+                                    albercas con grutas submarinas, un bar de alberca y una área para niños. 
+                                    
+                                    El hotel ofrece además de otros servicios, golfito, expediciones de pesca y varios 
+                                    restaurantes y bares para beber y comer a gusto de todos.
+                    
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionEighteen" class="ver-mas-trigger"></label>
+
                         </div>
 
                     </li>
 
+                    
+                    <!--  Section "Ver areas cercanas"  -->
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
-
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
-
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
                         
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationEighteen" />
+                        
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        A 10 kilómetros de el centro histórico de la ciudad.
+                                    </li>
 
-                        <ul *ngIf="element == true">
+                                    <li>
+                                        A sólo 10 minutos de la Zona Dorada. 
+                                    </li>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A 10 kilómetros de el centro histórico de la ciudad.
-                                </div>
+                                    <li>
+                                        El Aeropuerto de Mazatlán (MZT) está a 32 kilómetros.
+                                    </li>
 
-                            </li>
+                                </ul>
 
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    A sólo 10 minutos de la Zona Dorada.                                </div>
-                            </li>
-
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Aeropuerto de Mazatlán (MZT) está a 32 kilómetros.
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                                </span>
+                            </p>
+                        
+                        <label for="post-NearLocationEighteen" class="read-more-trigger"></label>
+                        
+                        </div>
+                        
+                    </li>
+   
                 </ul>       
             </div>
 
@@ -2374,71 +2197,68 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
                           </svg>
-                        <div class="txt">
-                            133 habitaciones con hermosas vistas al océano o a los jardines, 
-                            así como con un gran número de amenidades.
 
-                            Decorado con un estilo contemporáneo, incluyen un sistema de regadera doble, 
-                            aire acondicionado, caja de seguridad electrónica y acceso a internet inalámbrico. 
-                            
-                            En el hotel Emporio Mazatlán podrás disfrutar de exquisitos platillos mexicanos 
-                            en el restaurante abierto para desayuno, comida y cena. 
-                            
-                            Frente al mar, el bar ofrece las mejores bebidas tropicales y música en vivo 
-                            los fines de semana de temporada alta. Los más pequeños podrán disfrutar del 
-                            club de niños (abierto por temporadas) mientras tú te relajas cerca de una de 
-                            las dos albercas o dentro del jacuzzi. 
-                            
-                            Toma una siesta en una de las hamacas frente 
-                            a la playa o ve el gimnasio para no perder la forma. 
+                        <div class="txt">
+
+                            <input type="checkbox" class="ver-mas-state" id="post-descriptionNineteen" />
+                           
+                            <p class="ver-mas-wrap">
+                                133 habitaciones con hermosas vistas al océano o a los jardines, 
+                                así como con un gran número de amenidades.
+                    
+                                <span class="ver-mas-target"> 
+                                    Decorado con un estilo contemporáneo, incluyen un sistema de regadera doble, 
+                                    aire acondicionado, caja de seguridad electrónica y acceso a internet inalámbrico. 
+                                    
+                                    En el hotel Emporio Mazatlán podrás disfrutar de exquisitos platillos mexicanos 
+                                    en el restaurante abierto para desayuno, comida y cena. 
+                                    
+                                    Frente al mar, el bar ofrece las mejores bebidas tropicales y música en vivo 
+                                    los fines de semana de temporada alta. Los más pequeños podrán disfrutar del 
+                                    club de niños (abierto por temporadas) mientras tú te relajas cerca de una de 
+                                    las dos albercas o dentro del jacuzzi. 
+                                    
+                                    Toma una siesta en una de las hamacas frente 
+                                    a la playa o ve el gimnasio para no perder la forma. 
+                    
+                                </span>
+                    
+                            </p>
+                            <label for="post-descriptionNineteen" class="ver-mas-trigger"></label>
+  
                         </div>
 
                     </li>
 
+                    <!--  Section "Ver areas cercanas"  -->
 
-                    <!--  Section "Ver areas cercanas"  -->
-                    <li>
-                        <button *ngIf="element == false" (click)="showData()">
+                    <li style="list-style: none; padding-top: 2.5rem;">
 
-                            Ver areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                            </svg>
-
-                        </button>
-
-                        <button *ngIf="element == true" (click)="hideData()">
-
-                            Ocultar areas cercanas
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-
-                        </button>
+                        <div> 
                         
+                            <input type="checkbox" class="read-more-state" id="post-NearLocationNineteen" />
 
-                        <ul *ngIf="element == true">
+                            <p class="read-more-wrap"><span class="read-more-target">
+                                <ul>
+                                    <li>
+                                        El centro de la ciudad se encuentra a 5 kilómetros. 
+                                    </li>
 
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El centro de la ciudad se encuentra a 5 kilómetros.                             </div>
-                            </li>
+                                    <li>
+                                        El Aeropuerto de Mazatlán (MZT) está a 26 kilómetros.
+                                    </li>
+            
+                                </ul>
 
-
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 16 16">  
-                                    <g>  <use xlink:href="#Location"  fill="red"></use>  </g>
-                                </svg>
-                                <div class="txt">
-                                    El Aeropuerto de Mazatlán (MZT) está a 26 kilómetros.
-                                </div>
-                            </li>
-
-                        </ul>    
-                    </li>                                        
+                                </span>
+                            </p>
+                        
+                            <label for="post-NearLocationNineteen" class="read-more-trigger"></label>
+                        
+                        </div>
+                        
+                    </li>
+                                      
                 </ul>       
             </div>
 
