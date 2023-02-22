@@ -87,8 +87,9 @@ section{
 
             p{
                 font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
-               font-size: 1.7vw;
-                padding: 3vw;
+                margin-top: -1.6rem;
+                padding-left: 1vw;
+                padding-right: 2rem;
                 text-align: justify;
             
             }
@@ -124,6 +125,65 @@ section{
        
 
     }
+
+
+
+
+    
+    //ver mas...
+    .ver-mas-state {
+        display: none;
+        
+        
+    }
+
+    .ver-mas-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+        
+    }
+
+    .ver-mas-state:checked~.ver-mas-wrap .ver-mas-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+     
+    }
+
+        
+    .ver-mas-state~.ver-mas-trigger:before {
+        content: 'Ver mas...';
+
+    }
+  
+    .ver-mas-state:checked~.ver-mas-trigger:before {
+        content: 'Ver menos ▲';
+    }
+
+    .ver-mas-trigger {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 .5em;
+      
+        font-size: .9em;
+        line-height: 2;
+        
+        color: black;
+        font-weight: bold;
+        border: none;
+     
+    }
+
+
+
+
+
+
+
+
+
 
     @media (max-width: 600px){
         .BackFeed{

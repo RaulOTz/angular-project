@@ -84,7 +84,7 @@ section{
 
                     //Capacidad Maxima
                     .CapacidadM{
-                        padding-left: 1.31rem;
+                        
                         margin-right: 6rem;
                         padding-bottom: .1rem;
                         font-size: 1rem;
@@ -94,7 +94,7 @@ section{
                     .TxtCapacidad{
                         text-align: left;
                         margin-top: -2.6rem;
-                        margin-left: 11rem;
+                        margin-left: 10rem;
                         color: black; 
                        
                         font-size: 1rem; 
@@ -105,7 +105,7 @@ section{
                     .Incluye{
                         padding-top: 1rem;
                         margin-bottom: -1px;
-                        margin-left: -2.5vw;
+                        
                         margin-right: 9rem;
                         font-size: 1rem;
                         font-weight: bold;
@@ -180,6 +180,107 @@ section{
        
 
     }
+
+
+
+
+    //see more yacht stuff button
+    .read-more-state {
+        display: none;
+
+        
+    }
+
+    .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+    }
+
+    .read-more-state:checked~.read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+    }
+
+        
+    .read-more-state~.read-more-trigger:before {
+        content: 'Ver mas ↓';
+
+    }
+  
+    .read-more-state:checked~.read-more-trigger:before {
+        content: 'Ver menos ↑';
+    }
+
+    .read-more-trigger {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 .5em;
+        color: black;
+        font-weight: bold;
+        font-size: .9em;
+        line-height: 2;
+        border: none;
+
+        margin-top: -8rem;
+    }
+
+  
+
+
+
+    //ver mas...
+    .ver-mas-state {
+        display: none;
+        
+        
+    }
+
+    .ver-mas-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+        
+    }
+
+    .ver-mas-state:checked~.ver-mas-wrap .ver-mas-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+     
+    }
+
+        
+    .ver-mas-state~.ver-mas-trigger:before {
+        content: 'Ver mas...';
+
+    }
+  
+    .ver-mas-state:checked~.ver-mas-trigger:before {
+        content: 'Ver menos ▲';
+    }
+
+    .ver-mas-trigger {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 .5em;
+        
+        font-size: .9em;
+        line-height: 2;
+        
+        color: black;
+        font-weight: bold;
+        border: none;
+     
+    }
+
+
+
+
+
 
     @media (max-width: 600px){
         .BackFeed{
