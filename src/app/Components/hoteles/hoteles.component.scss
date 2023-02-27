@@ -13,11 +13,8 @@ section{
     .BackFeed{
         margin-bottom: 20vw;
         border-radius: 4vw;
-        //background:linear-gradient( #f8833d, #ffce00) ;
-        //background-color: none;
-        background-color: #ffffff;
-      // background: linear-gradient(#ffff, rgb(183, 178, 178), #ffff);        
-       display: flex;
+        background-color: #ffffff;    
+        display: flex;
         flex-wrap: wrap;
         padding-top: 4vw;
         padding-left: 4vw;
@@ -74,7 +71,7 @@ section{
             }
 
             img{
-                width: 100%;
+                //width: 100%;
             }
 
 
